@@ -13,7 +13,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #c40d3c; /* Updated Valor Red */
+    color: #bd9b60; /* Valor Gold */
     margin-top: 1.5em;
     margin-bottom: 0.7em;
     line-height: 1.3;
@@ -28,22 +28,22 @@ p {
 }
 
 a {
-    color: #c40d3c; /* Updated Valor Red */
+    color: #c40d3c; /* Valor Red */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #bd9b60; /* Updated Gold */
+    color: #bd9b60; /* Valor Gold */
     text-decoration: none;
 }
 
 /* Header & Navigation */
 header {
-    background-color: #c40d3c; /* Updated Valor Red */
+    background-color: #c40d3c; /* Valor Red */
     padding: 1em 2em;
     text-align: center;
-    border-bottom: 5px solid #bd9b60; /* Updated Gold */
+    border-bottom: 5px solid #bd9b60; /* Valor Gold */
 }
 
 header h1 {
@@ -84,8 +84,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #bd9b60; /* Updated Gold */
-    border-bottom-color: #bd9b60; /* Updated Gold */
+    color: #bd9b60; /* Valor Gold */
+    border-bottom-color: #bd9b60; /* Valor Gold */
     text-decoration: none;
 }
 
@@ -125,9 +125,8 @@ nav ul li a:hover {
     text-decoration: none;
 }
 .sidebar h2 a:hover {
-    color: #c40d3c; /* Updated Valor Red */
+    color: #c40d3c; /* Valor Red */
 }
-
 
 .sidebar ul {
     list-style: none;
@@ -141,7 +140,7 @@ nav ul li a:hover {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #c40d3c; /* Updated Valor Red */
+    color: #c40d3c; /* Valor Red */
     font-weight: 600;
     display: block;
     padding: 0.4em 0.6em;
@@ -150,19 +149,63 @@ nav ul li a:hover {
 }
 
 .sidebar ul li a:hover {
-    background-color: #bd9b60; /* Updated Valor Gold */
+    background-color: #bd9b60; /* Valor Gold */
     color: #ffffff;
     text-decoration: none;
 }
 
 /* Main Content Area */
-.teacher-content {
+.main-content {
     flex: 1;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #f8f8f8;
+    margin-bottom: 2em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    padding: 2em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(222, 226, 230);
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.welcome-section h2 { /* Main section heading */
+    border-bottom: 2px solid #c40d3c; /* Valor Red */
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: #000000;
+}
+
+/* Style the welcome headings */
+.welcome-section h3 {
+    margin-top: 2.5em;
+    padding-top: 1em;
+    border-top: 1px solid #e7e7e7;
+    color: #bd9b60; /* Valor Gold */
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Style the welcome links */
+.welcome-section a {
+    color: #c40d3c; /* Valor Red */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.welcome-section a:hover {
+    color: #bd9b60; /* Valor Gold */
+    border-bottom-color: #bd9b60; /* Valor Gold */
+    text-decoration: none;
 }
 
 /* Teacher List Section */
 .teacher-list {
-    background-color: rgb(248, 249, 250);
+    background-color: #f8f8f8;
     margin-bottom: 2em;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
     padding: 2em;
@@ -174,7 +217,7 @@ nav ul li a:hover {
 }
 
 .teacher-list h2 { /* Main section heading */
-    border-bottom: 2px solid #c40d3c; /* Updated Valor Red */
+    border-bottom: 2px solid #c40d3c; /* Valor Red */
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     color: #000000;
@@ -185,7 +228,7 @@ nav ul li a:hover {
     margin-top: 2.5em;
     padding-top: 1em;
     border-top: 1px solid #e7e7e7;
-    color: #bd9b60; /* Updated Valor Red */
+    color: #bd9b60; /* Valor Gold */
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -223,7 +266,7 @@ nav ul li a:hover {
 /* Button Styles (Wishlist, FavLink, CTA) */
 .wishlist-link, .fav-link, .cta-button {
     display: inline-block;
-    background-color: #c40d3c; /* Updated Valor Red */
+    background-color: #c40d3c; /* Valor Red */
     color: #ffffff !important;
     padding: 0.6em 1.2em;
     border-radius: 4px;
@@ -240,9 +283,9 @@ nav ul li a:hover {
 }
 
 .wishlist-link:hover, .fav-link:hover, .cta-button:hover {
-    background-color: #bd9b60; /* Updated Gold */
-    color: #c40d3c !important; /* Updated Valor Red */
-    border-color: #bd9b60; /* Updated Gold */
+    background-color: #bd9b60; /* Valor Gold */
+    color: #c40d3c !important; /* Valor Red */
+    border-color: #bd9b60; /* Valor Gold */
     text-decoration: none !important;
 }
 
@@ -263,7 +306,7 @@ nav ul li a:hover {
 }
 
 .return-top-link:hover {
-    color: #c40d3c; /* Updated Valor Red */
+    color: #c40d3c; /* Valor Red */
     text-decoration: underline;
 }
 
@@ -275,7 +318,7 @@ footer {
     background-color: #333333;
     color: #cccccc;
     font-size: 0.9em;
-    border-top: 5px solid #c40d3c; /* Updated Valor Red */
+    border-top: 5px solid #c40d3c; /* Valor Red */
 }
 footer p {
     margin: 0;
@@ -303,7 +346,7 @@ footer p {
     nav ul li { margin: 0 0.8em; }
     nav ul li a { font-size: 0.9em; }
 
-    .teacher-content {
+    .main-content {
         /* No specific changes needed here unless desired */
     }
 }
