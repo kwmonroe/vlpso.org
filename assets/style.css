@@ -198,13 +198,13 @@ header {
 .welcome-section h2 { /* Main section heading */
     border-bottom: 2px solid #c40d3c; /* Valor Red */
     padding-bottom: 0.5em;
-    margin-bottom: 1em;
+    margin: 0;
     color: #000000;
 }
 
 /* Style the welcome headings */
 .welcome-section h3 {
-    margin-top: 2.5em;
+    margin: 1em 0;
     padding-top: 1em;
     border-top: 1px solid #e7e7e7;
     color: #bd9b60; /* Valor Gold */
@@ -242,22 +242,18 @@ header {
 .teacher-list h2 { /* Main section heading */
     border-bottom: 2px solid #c40d3c; /* Valor Red */
     padding-bottom: 0.5em;
-    margin-bottom: 1em;
+    margin: 0;
     color: #000000;
 }
 
 /* Style the grade headings */
 .teacher-list h3[id^="grade-"] {
-    margin-top: 2.5em;
+    margin: 1em 0;
     padding-top: 1em;
     border-top: 1px solid #e7e7e7;
     color: #bd9b60; /* Valor Gold */
     font-size: 1.5em;
     font-weight: 700;
-}
-.teacher-list h3[id^="grade-"]:first-of-type {
-     margin-top: 0.5em;
-     border-top: none;
 }
 
 /* Teacher Entry Styling */
