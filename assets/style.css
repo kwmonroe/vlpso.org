@@ -349,15 +349,12 @@ footer p {
         flex-direction: column; /* Stack everything vertically */
         padding: 1em;
     }
-    .header-logo-left {
-        order: 1; /* Control order if needed */
+    .header-logo {
+        display: none;
     }
     .header-center-content {
-        order: 2;
+        order: 1; /* Control order if needed */
         margin: 0.5em 0; /* Add vertical spacing */
-    }
-    .header-logo-right {
-        order: 3;
     }
     /* Smaller heading content on mobile */
     .header-center-content h1 { font-size: 1.8em; }
