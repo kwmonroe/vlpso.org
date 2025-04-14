@@ -41,37 +41,60 @@ a:hover {
 /* Header & Navigation */
 header {
     background-color: #c40d3c; /* Valor Red */
-    padding: 1em 2em;
-    text-align: center;
+    padding: 1em 1.5em;
     border-bottom: 5px solid #bd9b60; /* Valor Gold */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+
+    /* Flexbox for layout */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space items out */
+    gap: 1em; /* Optional gap between items */
 }
 
-header h1 {
-    margin: 0 0 0.1em 0;
-    font-size: 2.4em;
+/* Style for the header logos */
+.header-logo {
+    height: 85px;
+    width: auto;
+    flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+/* Container for the centered H1 and Nav */
+.header-center-content {
+    display: flex;
+    flex-direction: column; /* Stack H1 and Nav */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    flex-grow: 1; /* Allow this section to take available space */
+    min-width: 0; /* Prevent flex overflow issues */
+}
+
+/* Reset margins for H1 and Nav within the center container */
+.header-center-content h1 {
+    margin: 0;
+    font-size: 2.2em;
     color: #ffffff;
     font-weight: 700;
+    line-height: 1.2;
 }
 
-header p {
-    margin: 0 0 0.8em 0;
-    font-style: normal;
-    color: #e0e0e0;
-    font-size: 1em;
+.header-center-content nav {
+    margin-top: 1em;
 }
 
-nav ul {
+.header-center-content nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.header-center-content nav ul li {
     display: inline-block;
     margin: 0 1.2em;
 }
 
-nav ul li a {
+.header-center-content nav ul li a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1em;
@@ -83,7 +106,7 @@ nav ul li a {
     transition: color 0.2s ease, border-bottom-color 0.2s ease;
 }
 
-nav ul li a:hover {
+.header-center-content nav ul li a:hover {
     color: #bd9b60; /* Valor Gold */
     border-bottom-color: #bd9b60; /* Valor Gold */
     text-decoration: none;
@@ -326,6 +349,25 @@ footer p {
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack everything vertically */
+        padding: 1em;
+    }
+    .header-logo-left {
+        order: 1; /* Control order if needed */
+    }
+    .header-center-content {
+        order: 2;
+        margin: 0.5em 0; /* Add vertical spacing */
+    }
+    .header-logo-right {
+        order: 3;
+    }
+    /* Smaller heading content on mobile */
+    .header-center-content h1 { font-size: 1.8em; }
+    .header-center-content nav ul li { margin: 0 0.8em; }
+    .header-center-content nav ul li a { font-size: 0.9em; }
+
     .content-wrapper {
         flex-direction: column;
         gap: 1.5em;
@@ -338,37 +380,7 @@ footer p {
         position: static;
         margin-bottom: 1em;
     }
-
-    header {
-        padding: 1em 1em;
-    }
-    header h1 { font-size: 2em; }
-    nav ul li { margin: 0 0.8em; }
-    nav ul li a { font-size: 0.9em; }
-
-    .main-content {
-        /* No specific changes needed here unless desired */
-    }
-}
-
-@media (max-width: 480px) {
-    body { font-size: 15px; }
-    header h1 { font-size: 1.8em; }
-    header p { font-size: 0.9em; }
-
-    nav ul li {
-        display: block;
-        margin: 0.5em 0;
-    }
-    nav ul li a { padding: 0.5em 0; }
-    nav ul li a:hover { border-bottom-color: transparent; }
-
-    .content-wrapper { padding: 0 1em; gap: 1em; margin-top: 1em;}
-    .sidebar { padding: 1em; }
-    .teacher-entry { padding: 1em; }
-    .wishlist-link, .fav-link, .cta-button { padding: 0.5em 1em; font-size: 0.8em; }
 }
 
 /* Add Google Font Import (if not already in HTML) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-
