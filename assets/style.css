@@ -112,27 +112,83 @@ header {
     text-decoration: none;
 }
 
-/* --- Layout for Sidebar and Content --- */
+/* ------------ Layout for pages ------------ */
 .content-wrapper {
     display: flex;
     max-width: 1100px;
     margin: 2.5em auto;
     padding: 0 1.5em;
     gap: 2.5em;
+    flex-wrap: wrap;
 }
 
-/* Sidebar Styling */
-.sidebar {
-    flex: 0 0 220px;
+.content-box {
     background-color: #f8f8f8;
+    margin-bottom: 2em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
     padding: 1.5em;
     border: 1px solid #e7e7e7;
     border-radius: 4px;
-    height: fit-content;
-    position: sticky;
-    top: 25px;
 }
 
+.main-content {
+    flex: 1;
+}
+
+/* ------------ Home / About styles ------------ */
+/* Style the welcome headings */
+.welcome-section h2 {
+    border-bottom: 2px solid #c40d3c; /* Valor Red */
+    padding-bottom: 0.5em;
+    margin: 0;
+    color: #000000;
+}
+.welcome-section h3 {
+    margin: 1em 0;
+    padding-top: 1em;
+    border-top: 1px solid #e7e7e7;
+    color: #bd9b60; /* Valor Gold */
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Style the welcome links */
+.welcome-section a {
+    color: #c40d3c; /* Valor Red */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+.welcome-section a:hover {
+    color: #bd9b60; /* Valor Gold */
+    border-bottom-color: #bd9b60; /* Valor Gold */
+    text-decoration: none;
+}
+
+/* ------------ Wishlist styles ------------ */
+/* Style the intro */
+.wishlist-intro {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+/* Style the intro headings */
+.wishlist-intro h2 {
+    border-bottom: 2px solid #c40d3c; /* Valor Red */
+    padding-bottom: 0.5em;
+    margin: 0;
+    color: #000000;
+}
+
+/* Style the sidebar */
+.sidebar {
+    flex: 0 0 220px;
+    height: fit-content;
+    position: sticky;
+    top: 25px; /* affects sticky position */
+}
+
+/* Style the sidebar headings */
 .sidebar h2 {
     margin-top: 0;
     margin-bottom: 1em;
@@ -141,14 +197,6 @@ header {
     padding-bottom: 0.6em;
     color: #000000;
     font-weight: 700;
-}
-/* Make sidebar H2 link look normal */
-.sidebar h2 a {
-    color: inherit;
-    text-decoration: none;
-}
-.sidebar h2 a:hover {
-    color: #c40d3c; /* Valor Red */
 }
 
 .sidebar ul {
@@ -177,86 +225,31 @@ header {
     text-decoration: none;
 }
 
-/* Main Content Area */
-.main-content {
-    flex: 1;
-}
-
-/* Welcome Section */
-.welcome-section {
-    background-color: #f8f8f8;
-    margin-bottom: 2em;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
-    padding: 2em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(222, 226, 230);
-    border-image: initial;
-    border-radius: 4px;
-}
-
-.welcome-section h2 { /* Main section heading */
-    border-bottom: 2px solid #c40d3c; /* Valor Red */
-    padding-bottom: 0.5em;
-    margin: 0;
+/* Style the teacher headings */
+.teacher-list h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 0.6em;
     color: #000000;
-}
-
-/* Style the welcome headings */
-.welcome-section h3 {
-    margin: 1em 0;
-    padding-top: 1em;
-    border-top: 1px solid #e7e7e7;
-    color: #bd9b60; /* Valor Gold */
-    font-size: 1.5em;
     font-weight: 700;
 }
-
-/* Style the welcome links */
-.welcome-section a {
-    color: #c40d3c; /* Valor Red */
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
-}
-
-.welcome-section a:hover {
-    color: #bd9b60; /* Valor Gold */
-    border-bottom-color: #bd9b60; /* Valor Gold */
-    text-decoration: none;
-}
-
-/* Teacher List Section */
-.teacher-list {
-    background-color: #f8f8f8;
-    margin-bottom: 2em;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
-    padding: 2em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(222, 226, 230);
-    border-image: initial;
-    border-radius: 4px;
-}
-
-.teacher-list h2 { /* Main section heading */
-    border-bottom: 2px solid #c40d3c; /* Valor Red */
-    padding-bottom: 0.5em;
-    margin: 0;
-    color: #000000;
-}
-
-/* Style the grade headings */
 .teacher-list h3[id^="grade-"] {
     margin: 1em 0;
     padding-top: 1em;
     border-top: 1px solid #e7e7e7;
     color: #bd9b60; /* Valor Gold */
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
 }
+.teacher-list h3[id^="grade-"]:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
 
-/* Teacher Entry Styling */
+/* Style the teacher entries */
 .teacher-entry {
     border: 1px solid #e7e7e7;
     padding: 1.5em;
@@ -329,7 +322,7 @@ header {
     text-decoration: underline;
 }
 
-/* Footer */
+/* ------------ Footer styles ------------ */
 footer {
     text-align: center;
     margin-top: 4em;
@@ -343,7 +336,7 @@ footer p {
     margin: 0;
 }
 
-/* --- Responsive Adjustments --- */
+/* ------------ Responsive Adjustments ------------ */
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Stack everything vertically */
