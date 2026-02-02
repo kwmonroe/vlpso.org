@@ -1,0 +1,196 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif; /* Content font */
+    line-height: 1.6;
+    background-color: #fdfbf5; /* Parchment-like background */
+    color: #4a4a4a; /* Dark grey text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif; /* Heading font */
+    color: #6a0dad; /* A deep purple, reminiscent of royalty/academia */
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #8b4513; /* Saddle brown for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #e0d8c7; /* Lighter parchment/tan */
+    padding: 1.5em 2em;
+    text-align: center;
+    border-bottom: 2px solid #c8bca7; /* Subtle border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #5a3a1a; /* Darker brown for main title */
+}
+
+header p {
+    margin: 0.2em 0 1em 0;
+    font-style: italic;
+    color: #7a6a5a;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #6a0dad; /* Purple links in nav */
+}
+
+nav ul li a:hover {
+    color: #8b4513; /* Brown on hover */
+    text-decoration: none;
+}
+
+/* Main Content Area */
+main {
+    max-width: 900px;
+    margin: 2em auto; /* Center content */
+    padding: 0 2em;
+}
+
+section {
+    background-color: #fff; /* White background for content sections */
+    padding: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #e0d8c7; /* Subtle border around sections */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05); /* Very subtle shadow */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+/* Specific Section Styling */
+.welcome h2, .featured h2, .teacher-list h2, .about-content h2 {
+    border-bottom: 1px solid #e0d8c7;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6a0dad; /* Purple button */
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5a3a1a; /* Dark brown on hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Teacher List Specifics */
+.teacher-entry {
+    border: 1px dashed #c8bca7; /* Dashed border for entries */
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #fdfbf5; /* Slightly different background */
+}
+
+.teacher-entry h3 {
+    margin-top: 0;
+    color: #8b4513; /* Brown for teacher names */
+}
+
+.wishlist-link {
+    display: inline-block;
+    background-color: #8b4513; /* Brown button for wishlists */
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.wishlist-link:hover {
+    background-color: #6a0dad; /* Purple on hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* About Page Specifics */
+.about-content ul {
+    list-style: disc; /* Or use 'square' or other classical-looking bullets */
+    margin-left: 2em;
+}
+
+.about-content strong {
+    font-family: 'Libre Baskerville', serif;
+    color: #6a0dad;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3em;
+    padding: 1.5em;
+    background-color: #e0d8c7; /* Same as header background */
+    color: #7a6a5a;
+    font-size: 0.9em;
+    border-top: 2px solid #c8bca7;
+}
+
+/* Responsive Adjustments (Optional but Recommended) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        margin: 0 0.8em;
+    }
+    main {
+        padding: 0 1em;
+    }
+    section {
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block; /* Stack nav items */
+        margin: 0.5em 0;
+    }
+    header {
+        padding: 1em;
+    }
+    main {
+        margin: 1em auto;
+    }
+}

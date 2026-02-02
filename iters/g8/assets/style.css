@@ -1,0 +1,372 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #bd9b60; /* Valor Gold */
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: #c40d3c; /* Valor Red */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #bd9b60; /* Valor Gold */
+    text-decoration: none;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #c40d3c; /* Valor Red */
+    padding: 1em 1.5em;
+    border-bottom: 5px solid #bd9b60; /* Valor Gold */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+
+    /* Flexbox for layout */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space items out */
+    gap: 1em; /* Optional gap between items */
+}
+
+/* Style for the header logos */
+.header-logo {
+    height: 85px;
+    width: auto;
+    flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+/* Container for the centered H1 and Nav */
+.header-center-content {
+    display: flex;
+    flex-direction: column; /* Stack H1 and Nav */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    flex-grow: 1; /* Allow this section to take available space */
+    min-width: 0; /* Prevent flex overflow issues */
+}
+
+/* Reset margins for H1 and Nav within the center container */
+.header-center-content h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.header-center-content nav {
+    margin-top: 1em;
+}
+
+.header-center-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-center-content nav ul li {
+    display: inline-block;
+    margin: 0 1.2em;
+}
+
+.header-center-content nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.header-center-content nav ul li a:hover {
+    color: #bd9b60; /* Valor Gold */
+    border-bottom-color: #bd9b60; /* Valor Gold */
+    text-decoration: none;
+}
+
+/* ------------ Layout for pages ------------ */
+.content-wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin: 2.5em auto;
+    padding: 0 1.5em;
+    gap: 2.5em;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    background-color: #f8f8f8;
+    margin-bottom: 2em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px;
+    padding: 1.5em;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* ------------ Home / About styles ------------ */
+/* Style the welcome headings */
+.welcome-section h2 {
+    border-bottom: 2px solid #c40d3c; /* Valor Red */
+    padding-bottom: 0.5em;
+    margin: 0;
+    color: #000000;
+}
+.welcome-section h3 {
+    margin: 1em 0;
+    padding-top: 1em;
+    border-top: 1px solid #e7e7e7;
+    color: #bd9b60; /* Valor Gold */
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Style the welcome links */
+.welcome-section a {
+    color: #c40d3c; /* Valor Red */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+.welcome-section a:hover {
+    color: #bd9b60; /* Valor Gold */
+    border-bottom-color: #bd9b60; /* Valor Gold */
+    text-decoration: none;
+}
+
+/* ------------ Wishlist styles ------------ */
+/* Style the intro */
+.wishlist-intro {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+/* Style the intro headings */
+.wishlist-intro h2 {
+    border-bottom: 2px solid #c40d3c; /* Valor Red */
+    padding-bottom: 0.5em;
+    margin: 0;
+    color: #000000;
+}
+
+/* Style the sidebar */
+.sidebar {
+    flex: 0 0 220px;
+    height: fit-content;
+    position: sticky;
+    top: 25px; /* affects sticky position */
+}
+
+/* Style the sidebar headings */
+.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 0.6em;
+    color: #000000;
+    font-weight: 700;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5em;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #c40d3c; /* Valor Red */
+    font-weight: 600;
+    display: block;
+    padding: 0.4em 0.6em;
+    border-radius: 3px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #bd9b60; /* Valor Gold */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Style the teacher headings */
+.teacher-list h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 0.6em;
+    color: #000000;
+    font-weight: 700;
+}
+.teacher-list h3[id^="grade-"] {
+    margin: 1em 0;
+    padding-top: 1em;
+    border-top: 1px solid #e7e7e7;
+    color: #bd9b60; /* Valor Gold */
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.teacher-list h3[id^="grade-"]:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* Style the teacher entries */
+.teacher-entry {
+    border: 1px solid #e7e7e7;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.teacher-entry h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.teacher-entry p {
+    font-size: 0.95em;
+    color: #555555;
+}
+.teacher-entry p i { /* Style for "No links provided" */
+    color: #777777;
+}
+
+/* Button Styles (Wishlist, FavLink, CTA) */
+.wishlist-link, .fav-link, .cta-button {
+    display: inline-block;
+    background-color: #c40d3c; /* Valor Red */
+    color: #ffffff !important;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85em;
+    margin-top: 0.5em;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.wishlist-link:hover, .fav-link:hover, .cta-button:hover {
+    background-color: #bd9b60; /* Valor Gold */
+    color: #c40d3c !important; /* Valor Red */
+    border-color: #bd9b60; /* Valor Gold */
+    text-decoration: none !important;
+}
+
+/* Spacing between buttons if both exist */
+.teacher-entry .wishlist-link + .fav-link {
+    margin-left: 0.8em;
+}
+
+/* Return to Top Link */
+.return-top-link {
+    display: block;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+    text-align: right;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+.return-top-link:hover {
+    color: #c40d3c; /* Valor Red */
+    text-decoration: underline;
+}
+
+/* ------------ Footer styles ------------ */
+footer {
+    text-align: center;
+    margin-top: 4em;
+    padding: 2em 1em;
+    background-color: #333333;
+    color: #cccccc;
+    font-size: 0.9em;
+    border-top: 5px solid #c40d3c; /* Valor Red */
+}
+footer p {
+    margin: 0;
+}
+
+/* ------------ Responsive Adjustments ------------ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack everything vertically */
+        padding: 1em;
+    }
+    .header-logo {
+        display: none;
+    }
+    .header-center-content {
+        order: 1; /* Control order if needed */
+        margin: 0.5em 0; /* Add vertical spacing */
+    }
+    /* Smaller heading content on mobile */
+    .header-center-content h1 { font-size: 1.8em; }
+    .header-center-content nav ul li { margin: 0 0.8em; }
+    .header-center-content nav ul li a { font-size: 0.9em; }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 1.5em;
+        margin-top: 1.5em;
+    }
+
+    .sidebar {
+        flex: 0 0 auto;
+        width: auto;
+        position: static;
+        margin-bottom: 1em;
+    }
+}
+
+/* Add Google Font Import (if not already in HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');

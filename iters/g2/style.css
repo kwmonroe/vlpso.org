@@ -1,0 +1,200 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif; /* Content font - Keeping this for classical feel */
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark grey text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif; /* Heading font - Keeping this */
+    color: #003366; /* Valor Blue for headings */
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #003366; /* Valor Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fdb813; /* Valor Gold for link hover */
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #003366; /* Valor Blue background */
+    padding: 1.5em 2em;
+    text-align: center;
+    border-bottom: 4px solid #fdb813; /* Valor Gold accent border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff; /* White text on blue background */
+}
+
+header p {
+    margin: 0.2em 0 1em 0;
+    font-style: italic;
+    color: #e0e0e0; /* Lighter grey text on blue background */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #ffffff; /* White links in nav */
+}
+
+nav ul li a:hover {
+    color: #fdb813; /* Gold on hover */
+    text-decoration: none;
+}
+
+/* Main Content Area */
+main {
+    max-width: 900px;
+    margin: 2em auto; /* Center content */
+    padding: 0 2em;
+}
+
+section {
+    background-color: #f8f9fa; /* Light grey background for content sections */
+    padding: 2em;
+    margin-bottom: 2em;
+    border: 1px solid #dee2e6; /* Subtle border around sections */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Specific Section Styling */
+.welcome h2, .featured h2, .teacher-list h2, .about-content h2 {
+    border-bottom: 2px solid #003366; /* Blue border under section titles */
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #003366; /* Valor Blue button */
+    color: #ffffff; /* White text */
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    font-family: 'Libre Baskerville', serif; /* Keep classical font */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    border: none; /* Remove default border */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fdb813; /* Valor Gold on hover */
+    color: #003366; /* Blue text on hover */
+    text-decoration: none;
+}
+
+/* Teacher List Specifics */
+.teacher-entry {
+    border: 1px solid #ced4da; /* Slightly darker border for entries */
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #ffffff; /* White background for entries */
+    border-radius: 3px;
+}
+
+.teacher-entry h3 {
+    margin-top: 0;
+    color: #003366; /* Blue for teacher names */
+}
+
+.wishlist-link {
+    display: inline-block;
+    background-color: #003366; /* Blue button for wishlists */
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wishlist-link:hover {
+    background-color: #fdb813; /* Gold on hover */
+    color: #003366; /* Blue text on hover */
+    text-decoration: none;
+}
+
+/* About Page Specifics */
+.about-content ul {
+    list-style: disc;
+    margin-left: 2em;
+    padding-left: 1em; /* Add some padding */
+}
+
+.about-content strong {
+    font-family: 'Libre Baskerville', serif;
+    color: #003366; /* Blue for strong text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3em;
+    padding: 1.5em;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #6c757d; /* Medium grey text */
+    font-size: 0.9em;
+    border-top: 1px solid #dee2e6; /* Subtle top border */
+}
+
+/* Responsive Adjustments (Keep these) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        margin: 0 0.8em;
+    }
+    main {
+        padding: 0 1em;
+    }
+    section {
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block; /* Stack nav items */
+        margin: 0.5em 0;
+    }
+    header {
+        padding: 1em;
+    }
+    main {
+        margin: 1em auto;
+    }
+}
