@@ -465,6 +465,61 @@ footer p {
     transform: scale(1.05);
 }
 
+/* Newsletter tile grid */
+.newsletter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.2em;
+    margin-top: 1.5em;
+}
+
+.newsletter-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #c40d3c;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 0 0 1em 0;
+    overflow: hidden;
+    text-decoration: none !important;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.newsletter-tile:hover {
+    background-color: #bd9b60;
+    transform: translateY(-3px);
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.newsletter-tile .tile-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 0.6em;
+    display: block;
+}
+
+.newsletter-tile .tile-month {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.05em;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff !important;
+}
+
+.newsletter-tile .tile-icon {
+    font-size: 1.8em;
+    margin-bottom: 0.4em;
+    color: #ffffff !important;
+}
+
 /* Optional: static logo (like your 39.png at the end) */
 .logo-static {
     display: flex;
