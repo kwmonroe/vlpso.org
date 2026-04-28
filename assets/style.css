@@ -1,17 +1,22 @@
 /* Basic Reset & Body Styling */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #333333;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-weight: 700;
     color: #bd9b60; /* Valor Gold */
     margin-top: 1.5em;
@@ -77,6 +82,8 @@ header {
     color: #ffffff;
     font-weight: 700;
     line-height: 1.2;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    letter-spacing: 0.02em;
 }
 
 .header-center-content nav {
@@ -95,12 +102,12 @@ header {
 }
 
 .header-center-content nav ul li a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1em;
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 400;
+    font-size: 0.85em;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
     transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -336,23 +343,83 @@ footer p {
     margin: 0;
 }
 
+/* Hamburger button — hidden on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.6em;
+    line-height: 1;
+    padding: 0.2em 0.3em;
+    flex-shrink: 0;
+}
+
 /* ------------ Responsive Adjustments ------------ */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack everything vertically */
+        flex-direction: column;
         padding: 1em;
     }
     .header-logo {
         display: none;
     }
+
+    /* Title row: h1 left, hamburger right */
     .header-center-content {
-        order: 1; /* Control order if needed */
-        margin: 0.5em 0; /* Add vertical spacing */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        gap: 0.5em;
     }
-    /* Smaller heading content on mobile */
-    .header-center-content h1 { font-size: 1.8em; }
-    .header-center-content nav ul li { margin: 0 0.8em; }
-    .header-center-content nav ul li a { font-size: 0.9em; }
+    .header-center-content h1 {
+        font-size: 1.3em;
+        text-align: left;
+        flex: 1;
+        margin: 0;
+    }
+
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Nav hidden by default on mobile */
+    .header-center-content nav {
+        display: none;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+    .header-center-content nav.nav-open {
+        display: block;
+    }
+
+    /* Stack nav items vertically */
+    .header-center-content nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .header-center-content nav ul li {
+        display: block;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .header-center-content nav ul li:last-child {
+        border-bottom: none;
+    }
+    .header-center-content nav ul li a {
+        display: block;
+        padding: 0.75em 1em;
+        font-size: 0.8em;
+    }
 
     .content-wrapper {
         flex-direction: column;
@@ -369,4 +436,4 @@ footer p {
 }
 
 /* Add Google Font Import (if not already in HTML) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Cinzel:wght@400;600;700&display=swap');
