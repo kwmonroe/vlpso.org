@@ -57,38 +57,49 @@
 <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
-            <h2>Upload Photos &amp; Purchase Your Yearbook</h2>
-            <p>
-                Preserve the memories of this school year. More information about the
-                Valor Leander yearbook will be posted here as it becomes available.
+            <h2 style="text-align: center;">2025–2026 Yearbook</h2>
+            <p style="text-align: center; max-width: 620px; margin: 0 auto 2.5em;">
+                Preserve the memories of this school year. Below you'll find everything you need
+                to submit photos and order your copy of this year's Valor Leander yearbook.
             </p>
 
-            <h3>Yearbook Photo Uploads</h3>
+            <!-- Two sections side by side on desktop -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.8em;">
 
-            <p>
-                Help us capture every moment of the 2025–2026 Griffin school year! We are
-                collecting photos from classroom celebrations, family socials, field trips,
-                spirit nights, and all the in-between moments that make Valor Leander special.
-                Every photo submitted is an opportunity to see our community reflected in the
-                pages of this year's yearbook.
-            </p>
-            <p>
-                Scan the QR code below to upload your photos directly to our SmugMug gallery.
-                High-quality, well-lit photos are especially appreciated — candid moments,
-                group shots, and anything that showcases the joy and virtue of our Griffin
-                community are all welcome!
-            </p>
+                <!-- Photo Uploads -->
+                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 2em 1.6em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <p style="font-size: 2.2em; margin: 0 0 0.4em; line-height: 1;">📷</p>
+                    <h3 style="color: #bd9b60; margin: 0 0 0.6em; font-size: 1.3em;">Yearbook Photo Uploads</h3>
+                    <p style="font-size: 0.93em; color: #555; margin: 0 0 1em; line-height: 1.65;">
+                        Help us capture every moment of the 2025–2026 Griffin school year! We are collecting
+                        photos from classroom celebrations, family socials, field trips, spirit nights, and all
+                        the in-between moments that make Valor Leander special.
+                    </p>
+                    <p style="font-size: 0.93em; color: #555; margin: 0 0 1.4em; line-height: 1.65;">
+                        Scan the QR code below to upload your photos directly to our SmugMug gallery.
+                        High-quality, candid moments and group shots are especially appreciated!
+                    </p>
+                    <div style="background: #f8f8f8; border: 2px solid #bd9b60; border-radius: 8px; padding: 1.2em; display: inline-block; margin-top: auto;">
+                        <img src="assets/smugmug-qr.png" alt="SmugMug Photo Upload QR Code" style="max-width: 200px; width: 100%; height: auto; display: block;" />
+                        <p style="margin: 0.6em 0 0; font-size: 0.82em; color: #777; font-style: italic;">Scan to upload photos</p>
+                    </div>
+                </div>
 
-            <div style="text-align: center; margin: 2em 0;">
-                <img src="assets/smugmug-qr.png" alt="SmugMug Photo Upload QR Code" style="max-width: 280px; width: 100%; height: auto;" />
-            </div>
+                <!-- Purchase Yearbook -->
+                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 2em 1.6em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <p style="font-size: 2.2em; margin: 0 0 0.4em; line-height: 1;">📖</p>
+                    <h3 style="color: #bd9b60; margin: 0 0 0.6em; font-size: 1.3em;">Purchase Your Yearbook</h3>
+                    <p style="font-size: 0.93em; color: #555; margin: 0 0 1.4em; line-height: 1.65;">
+                        Order your copy of the 2025–2026 Valor Leander yearbook online. Click the image
+                        below to visit Yearbook Order Center and place your order — don't miss your chance
+                        to preserve this year's memories!
+                    </p>
+                    <a href="https://yearbookordercenter.com/jobSearch/displayHome" target="_blank" rel="noopener" style="display: block; margin-top: auto; width: 100%;">
+                        <img src="assets/yearbook-order.png" alt="Order a Yearbook at yearbookordercenter.com" style="width: 100%; height: auto; border-radius: 6px; border: 3px solid #bd9b60; box-shadow: 0 3px 10px rgba(0,0,0,0.12); transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+                    </a>
+                    <a href="https://yearbookordercenter.com/jobSearch/displayHome" target="_blank" rel="noopener" class="cta-button" style="margin-top: 1.2em;">Order Your Yearbook</a>
+                </div>
 
-            <h3>Purchasing A Yearbook</h3>
-
-            <div style="text-align: center; margin: 2em 0;">
-                <a href="https://yearbookordercenter.com/jobSearch/displayHome" target="_blank" rel="noopener">
-                    <img src="assets/yearbook-order.png" alt="Order a Yearbook — Valor Leander order number 25841, $35 each at yearbookordercenter.com" style="max-width: 500px; width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
-                </a>
             </div>
         </section>
     </main>
