@@ -57,30 +57,42 @@
 <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
-            <h2>Uniform Swap</h2>
-            <p>
+            <h2 style="text-align: center;">Uniform Swap</h2>
+            <p style="text-align: center; max-width: 640px; margin: 0 auto 2em;">
                 The Valor Leander PSO Uniform Swap is a community resource for families to exchange
                 gently used uniforms. Pass along items your children have outgrown and find pieces
                 you need — all at no cost to the community.
             </p>
 
-            <div style="text-align: center; margin: 2em 0;">
-                <img src="assets/uniform-swap.png" alt="Valor Leander PSO Uniform Swap" style="max-width: 70%; height: auto; border-radius: 6px;" />
+            <!-- Swap flyer images side by side on desktop, stacked on mobile -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; margin: 0 0 2.5em;">
+                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; padding-bottom: 1em;">
+                    <img src="assets/uniform-swap.png" alt="Valor Leander PSO Uniform Swap" style="width: 100%; height: auto; display: block; border-bottom: 3px solid #bd9b60;" />
+                    <p style="margin: 0.8em 0 0; font-size: 0.88em; color: #666; font-style: italic;">Uniform Swap Overview</p>
+                </div>
+                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; padding-bottom: 1em;">
+                    <img src="assets/uniform-swap-2.png" alt="Uniform Swap Participation Guidelines" style="width: 100%; height: auto; display: block; border-bottom: 3px solid #bd9b60;" />
+                    <p style="margin: 0.8em 0 0; font-size: 0.88em; color: #666; font-style: italic;">Participation Guidelines</p>
+                </div>
             </div>
 
-            <div style="text-align: center; margin: 2em 0;">
-                <img src="assets/uniform-swap-2.png" alt="Uniform Swap Guidelines for Participation" style="max-width: 70%; height: auto; border-radius: 6px;" />
-            </div>
+            <!-- Uniform Guidelines & Purchase side by side -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5em; margin-bottom: 0.5em;">
 
-            <h3 style="margin-top: 2em;">Uniform Guidelines</h3>
+                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.6em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <p style="font-size: 2em; margin: 0 0 0.5em; line-height: 1;">📋</p>
+                    <h3 style="color: #333; margin: 0 0 0.4em; font-size: 1.1em;">Uniform Guidelines</h3>
+                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em;">Review the official Valor Leander dress code and uniform requirements.</p>
+                    <a href="assets/uniform-guidelines.pdf" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Guidelines</a>
+                </div>
 
-            <a href="assets/uniform-guidelines.pdf" target="_blank" rel="noopener" class="newsletter-tile" style="max-width: 220px; margin: 1em auto; display: flex;">
-                <img src="assets/newsletter-thumbs/uniform-guidelines.png" alt="Valor Uniform Guidelines" class="tile-thumb" />
-                <div class="tile-month">View Uniform Guidelines</div>
-            </a>
+                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.6em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <p style="font-size: 2em; margin: 0 0 0.5em; line-height: 1;">🛍️</p>
+                    <h3 style="color: #333; margin: 0 0 0.4em; font-size: 1.1em;">Shop Lands' End Uniforms</h3>
+                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em;">Purchase new Valor Leander uniforms directly through our school's Lands' End store.</p>
+                    <a href="https://www.landsend.com/co/account/school-uniforms?selectedSchoolNum=900206111" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">Shop Now</a>
+                </div>
 
-            <div style="text-align: center; margin: 1.5em 0;">
-                <a href="https://www.landsend.com/co/account/school-uniforms?selectedSchoolNum=900206111" target="_blank" rel="noopener" class="cta-button">Purchase VL Lands End Uniforms</a>
             </div>
         </section>
     </main>
