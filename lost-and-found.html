@@ -27,6 +27,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Lost & Found page mobile styles */
+        .lf-notice {
+            background-color: #c40d3c;
+            border-radius: 8px;
+            padding: 1.5em 2em;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+        .lf-notice-label {
+            margin: 0 0 0.3em;
+            font-size: 0.8em;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #f8d89a;
+            font-weight: 700;
+        }
+        .lf-notice-heading {
+            margin: 0;
+            font-size: 1.15em;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+        .lf-notice-sub {
+            margin: 0.6em 0 0;
+            font-size: 0.93em;
+            color: #f8d89a;
+            line-height: 1.65;
+        }
+        .lf-volunteer-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+        .lf-volunteer-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.6em 2.4em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+        .lf-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.2em;
+            margin-bottom: 2em;
+        }
+        .lf-info-card {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.5em 1.4em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+        .lf-campus-section {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #bd9b60;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            overflow: hidden;
+            margin-bottom: 1.5em;
+        }
+        .lf-campus-header {
+            background-color: #bd9b60;
+            padding: 1em 1.6em;
+        }
+        .lf-campus-header h3 {
+            margin: 0;
+            color: #fff;
+            font-size: 1.15em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            letter-spacing: 0.02em;
+        }
+        .lf-campus-body {
+            padding: 1.4em 1.6em 1.8em;
+        }
+        .lf-photo-strip {
+            display: flex;
+            gap: 1em;
+            overflow-x: auto;
+            padding-bottom: 0.8em;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .lf-photo-strip img {
+            height: 320px;
+            width: auto;
+            flex-shrink: 0;
+            border-radius: 6px;
+            border: 2px solid #e7e7e7;
+            object-fit: cover;
+            scroll-snap-align: start;
+            cursor: pointer;
+        }
+        .lf-photo-hint {
+            font-size: 0.82em;
+            color: #999;
+            margin: 0.6em 0 0;
+            font-style: italic;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .lf-notice {
+                padding: 1.2em 1em;
+            }
+            .lf-notice-heading {
+                font-size: 1em;
+            }
+            .lf-volunteer-tile {
+                padding: 1.4em 1.2em;
+            }
+            .lf-info-grid {
+                grid-template-columns: 1fr;
+                gap: 0.9em;
+            }
+            .lf-campus-body {
+                padding: 1em 0.9em 1.4em;
+            }
+            .lf-photo-strip img {
+                height: 240px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -67,19 +203,19 @@
             </p>
 
             <!-- Urgent notice banner -->
-            <div style="background-color: #c40d3c; border-radius: 8px; padding: 1.5em 2em; margin-bottom: 2em; text-align: center;">
-                <p style="margin: 0 0 0.3em; font-size: 0.8em; letter-spacing: 0.16em; text-transform: uppercase; color: #f8d89a; font-weight: 700;">Important Notice</p>
-                <p style="margin: 0; font-size: 1.15em; color: #ffffff; font-weight: 700; line-height: 1.6;">
+            <div class="lf-notice">
+                <p class="lf-notice-label">Important Notice</p>
+                <p class="lf-notice-heading">
                     All unclaimed Lost &amp; Found items will be <u>donated on May 29th, 2026</u> — the last day of school.
                 </p>
-                <p style="margin: 0.6em 0 0; font-size: 0.93em; color: #f8d89a; line-height: 1.65;">
+                <p class="lf-notice-sub">
                     Please claim your items before this date. Once donated, items cannot be recovered.
                 </p>
             </div>
 
             <!-- Volunteer tile -->
-            <div style="display: flex; justify-content: center; margin-bottom: 2em;">
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.6em 2.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 600px;">
+            <div class="lf-volunteer-wrap">
+                <div class="lf-volunteer-tile">
                     <p style="font-size: 2em; margin: 0 0 0.5em; line-height: 1;">🙋</p>
                     <h4 style="color: #333; margin: 0 0 0.3em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Volunteer to Help</h4>
                     <p style="font-size: 0.88em; color: #555; margin: 0 0 1.2em; line-height: 1.65;">Sign up to help scholars sort through lost and found items and reunite them with their belongings before the end of the school year.</p>
@@ -88,72 +224,63 @@
             </div>
 
             <!-- Info cards -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2em; margin-bottom: 2em;">
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.5em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); text-align: center;">
+            <div class="lf-info-grid">
+                <div class="lf-info-card">
                     <p style="font-size: 2em; margin: 0 0 0.4em;">🔍</p>
                     <h3 style="color: #c40d3c; margin: 0 0 0.4em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Check the Photos</h3>
                     <p style="font-size: 0.9em; color: #555; margin: 0; line-height: 1.7;">Browse the campus photos below and have your scholar look for any missing items — backpacks, jackets, water bottles, lunchboxes, and more.</p>
                 </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.5em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); text-align: center;">
+                <div class="lf-info-card">
                     <p style="font-size: 2em; margin: 0 0 0.4em;">🏫</p>
                     <h3 style="color: #c40d3c; margin: 0 0 0.4em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Visit In Person</h3>
                     <p style="font-size: 0.9em; color: #555; margin: 0; line-height: 1.7;">Parents and scholars are welcome to come to campus during regular business hours to look through lost and found items in person.</p>
                 </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.5em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); text-align: center;">
+                <div class="lf-info-card">
                     <p style="font-size: 2em; margin: 0 0 0.4em;">📅</p>
                     <h3 style="color: #c40d3c; margin: 0 0 0.4em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Donation Deadline</h3>
                     <p style="font-size: 0.9em; color: #555; margin: 0; line-height: 1.7;">All remaining unclaimed items will be donated to those in need on <strong>May 29th, 2026</strong>. Don't miss your chance to reclaim lost belongings!</p>
                 </div>
-
             </div>
 
-            <!-- Campus photo sections -->
-            <div style="border: 1px solid #e7e7e7; border-top: 4px solid #bd9b60; border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); overflow: hidden; margin-bottom: 1.5em;">
-                <div style="background-color: #bd9b60; padding: 1em 1.6em;">
-                    <h3 style="margin: 0; color: #fff; font-size: 1.15em; font-family: 'Libre Baskerville', Georgia, serif; letter-spacing: 0.02em;">📍 Crystal Falls Campus</h3>
+            <!-- Crystal Falls Campus -->
+            <div class="lf-campus-section">
+                <div class="lf-campus-header">
+                    <h3>📍 Crystal Falls Campus</h3>
                 </div>
-                <div style="padding: 1.4em 1.6em 1.8em;">
+                <div class="lf-campus-body">
                     <p style="font-size: 0.9em; color: #555; margin: 0 0 1.2em; line-height: 1.7;">
                         Browse the photos below and have your scholar look for any missing items. Parents are also welcome to come to campus during regular business hours to look through lost and found in person.
                     </p>
-                    <div style="display: flex; gap: 1em; overflow-x: auto; padding-bottom: 0.8em; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+                    <div class="lf-photo-strip">
                         <img src="assets/lost-and-found/crystal-falls-1.jpg" alt="Crystal Falls Lost & Found — photo 1"
-                             style="height: 320px; width: auto; flex-shrink: 0; border-radius: 6px; border: 2px solid #e7e7e7; object-fit: cover; scroll-snap-align: start; cursor: pointer;"
                              onclick="this.requestFullscreen ? this.requestFullscreen() : (this.webkitRequestFullscreen && this.webkitRequestFullscreen())" />
                         <img src="assets/lost-and-found/crystal-falls-2.jpg" alt="Crystal Falls Lost & Found — photo 2"
-                             style="height: 320px; width: auto; flex-shrink: 0; border-radius: 6px; border: 2px solid #e7e7e7; object-fit: cover; scroll-snap-align: start; cursor: pointer;"
                              onclick="this.requestFullscreen ? this.requestFullscreen() : (this.webkitRequestFullscreen && this.webkitRequestFullscreen())" />
                         <img src="assets/lost-and-found/crystal-falls-3.jpg" alt="Crystal Falls Lost & Found — photo 3"
-                             style="height: 320px; width: auto; flex-shrink: 0; border-radius: 6px; border: 2px solid #e7e7e7; object-fit: cover; scroll-snap-align: start; cursor: pointer;"
                              onclick="this.requestFullscreen ? this.requestFullscreen() : (this.webkitRequestFullscreen && this.webkitRequestFullscreen())" />
                         <img src="assets/lost-and-found/crystal-falls-4.jpg" alt="Crystal Falls Lost & Found — photo 4"
-                             style="height: 320px; width: auto; flex-shrink: 0; border-radius: 6px; border: 2px solid #e7e7e7; object-fit: cover; scroll-snap-align: start; cursor: pointer;"
                              onclick="this.requestFullscreen ? this.requestFullscreen() : (this.webkitRequestFullscreen && this.webkitRequestFullscreen())" />
                     </div>
-                    <p style="font-size: 0.82em; color: #999; margin: 0.6em 0 0; font-style: italic; text-align: center;">Scroll to see all photos · Tap a photo to view full size</p>
+                    <p class="lf-photo-hint">Scroll to see all photos · Tap a photo to view full size</p>
                 </div>
             </div>
 
-            <div style="border: 1px solid #e7e7e7; border-top: 4px solid #bd9b60; border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); overflow: hidden; margin-bottom: 1.5em;">
-                <div style="background-color: #bd9b60; padding: 1em 1.6em;">
-                    <h3 style="margin: 0; color: #fff; font-size: 1.15em; font-family: 'Libre Baskerville', Georgia, serif; letter-spacing: 0.02em;">📍 Kauffman Loop Campus</h3>
+            <!-- Kauffman Loop Campus -->
+            <div class="lf-campus-section">
+                <div class="lf-campus-header">
+                    <h3>📍 Kauffman Loop Campus</h3>
                 </div>
-                <div style="padding: 1.4em 1.6em 1.8em;">
+                <div class="lf-campus-body">
                     <p style="font-size: 0.9em; color: #555; margin: 0 0 1.2em; line-height: 1.7;">
                         Browse the photos below and have your scholar look for any missing items. Parents are also welcome to come to campus during regular business hours to look through lost and found in person.
                     </p>
-                    <div style="display: flex; gap: 1em; overflow-x: auto; padding-bottom: 0.8em; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+                    <div class="lf-photo-strip">
                         <img src="assets/lost-and-found/kauffman-1.jpg" alt="Kauffman Loop Lost & Found — photo 1"
-                             style="height: 320px; width: auto; flex-shrink: 0; border-radius: 6px; border: 2px solid #e7e7e7; object-fit: cover; scroll-snap-align: start; cursor: pointer;"
                              onclick="this.requestFullscreen ? this.requestFullscreen() : (this.webkitRequestFullscreen && this.webkitRequestFullscreen())" />
                         <img src="assets/lost-and-found/kauffman-2.jpg" alt="Kauffman Loop Lost & Found — photo 2"
-                             style="height: 320px; width: auto; flex-shrink: 0; border-radius: 6px; border: 2px solid #e7e7e7; object-fit: cover; scroll-snap-align: start; cursor: pointer;"
                              onclick="this.requestFullscreen ? this.requestFullscreen() : (this.webkitRequestFullscreen && this.webkitRequestFullscreen())" />
                     </div>
-                    <p style="font-size: 0.82em; color: #999; margin: 0.6em 0 0; font-style: italic; text-align: center;">Scroll to see all photos · Tap a photo to view full size</p>
+                    <p class="lf-photo-hint">Scroll to see all photos · Tap a photo to view full size</p>
                 </div>
             </div>
 
