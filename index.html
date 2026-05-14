@@ -160,5 +160,16 @@
 </footer>
 
 <script src="assets/main.js"></script>
+
+<!-- Hit counter -->
+<div id="hit-counter" style="position: fixed; bottom: 1.2em; right: 1.2em; background: rgba(255,255,255,0.92); border: 1px solid #e7e7e7; border-radius: 8px; padding: 0.45em 0.85em; font-size: 0.78em; color: #666; box-shadow: 0 2px 8px rgba(0,0,0,0.10); display: flex; align-items: center; gap: 0.4em; z-index: 999; backdrop-filter: blur(4px);">
+  <span style="color: #c40d3c;">●</span> <span id="hit-count" style="font-weight: 600; color: #333;">—</span> <span>visitors</span>
+</div>
+<script>
+  fetch('https://api.countapi.xyz/hit/vlpso.org/pageviews')
+    .then(r => r.json())
+    .then(d => { document.getElementById('hit-count').textContent = d.value.toLocaleString(); })
+    .catch(() => { document.getElementById('hit-counter').style.display = 'none'; });
+</script>
 </body>
 </html>
