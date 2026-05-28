@@ -27,6 +27,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        .resource-section-heading {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1.15em;
+            color: #fff;
+            background: #c40d3c;
+            border-radius: 6px;
+            padding: 0.55em 1.1em;
+            margin: 1.6em 0 0.9em;
+            letter-spacing: 0.02em;
+        }
+        .resource-section-heading:first-of-type {
+            margin-top: 0.2em;
+        }
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 1em;
+        }
+        .resource-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.1em 1em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .resource-tile--gold {
+            border-top-color: #bd9b60;
+            background: #fffdf7;
+        }
+        .resource-tile-icon {
+            font-size: 1.8em;
+            margin: 0 0 0.35em;
+            line-height: 1;
+        }
+        .resource-tile-img {
+            max-width: 80px;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #bd9b60;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+            margin-bottom: 0.7em;
+        }
+        .resource-tile h3 {
+            color: #333;
+            margin: 0 0 0.35em;
+            font-size: 0.9em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            line-height: 1.35;
+        }
+        .resource-tile p {
+            font-size: 0.8em;
+            color: #666;
+            margin: 0 0 0.9em;
+            line-height: 1.55;
+        }
+        .resource-tile ol {
+            font-size: 0.8em;
+            color: #555;
+            text-align: left;
+            margin: 0 0 0.9em;
+            padding-left: 1.2em;
+            line-height: 1.7;
+        }
+        .resource-tile .tile-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%;
+            margin-top: auto;
+        }
+        .resource-tile .cta-button {
+            font-size: 0.8em;
+            padding: 0.45em 0.8em;
+        }
+        .resource-tile .coming-soon-badge {
+            font-size: 0.78em;
+            font-weight: 700;
+            color: #bd9b60;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: auto 0 0;
+            background: #f5efe0;
+            border: 1px solid #e0d0a0;
+            border-radius: 20px;
+            padding: 0.35em 1em;
+        }
+    </style>
 </head>
 
 <body>
@@ -61,164 +156,213 @@
     <main class="main-content">
         <section class="content-box welcome-section">
             <h2 style="text-align: center;">Family Resources</h2>
-            <p style="text-align: center; max-width: 640px; margin: 0 auto 2em;">
+            <p style="text-align: center; max-width: 640px; margin: 0 auto 1.6em;">
                 Everything you need in one place. Find important documents, links, and tools
                 to help your family thrive at Valor Leander.
             </p>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.4em; margin-top: 0.5em;">
+            <!-- ===== SECTION 1 ===== -->
+            <p class="resource-section-heading">Important Valor Leander School Information</p>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">💡</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">PSO Tips &amp; Tricks For Families</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Browse our Tips &amp; Tricks pages for all grades — insider knowledge to help your family make the most of the Valor Leander experience.</p>
-                    <a href="https://canva.link/vlpsotipsntricks" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Tips &amp; Tricks</a>
-                </div>
+            <div class="resource-grid">
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">🍽️</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Kids Discount Meals</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Restaurants and eateries offering kids discount meals — a great way to save while dining out with your family.</p>
-                    <a href="https://canva.link/kidsmeals" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Kids Meals</a>
-                </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <div style="margin-bottom: 1em;">
-                        <img src="assets/cf-carline-etiquette.png" alt="Crystal Falls Carline Etiquette" style="max-width: 120px; width: 100%; height: auto; border-radius: 6px; border: 2px solid #bd9b60; box-shadow: 0 2px 8px rgba(0,0,0,0.10);" />
+                <!-- 2026 Book Bundles -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">📚</p>
+                    <h3>2026 Book Bundle Information</h3>
+                    <p>Order all your scholar's required books in one bundle through <strong>BookPal</strong> — prices beat Amazon, and books deliver by late July. Order deadline is <strong>June 26</strong>. Bundles available for K–12.</p>
+                    <div class="tile-buttons">
+                        <a href="assets/2026-book-bundles.pdf" target="_blank" rel="noopener" class="cta-button">View Book Bundle Flyer</a>
+                        <a href="https://bkp.al/valor" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">Order on BookPal</a>
                     </div>
-                    <h3 style="color: #333; margin: 0 0 0.4em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Crystal Falls Carline Etiquette</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Guidelines for a safe and respectful carline experience at the Crystal Falls campus.</p>
-                    <a href="assets/cf-carline-etiquette.png" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Guidelines</a>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">🏷️</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Name Bubbles Custom Labels</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Label your scholar's belongings with personalized Name Bubbles stickers and tags. A portion of every purchase comes back to support the PSO!</p>
-                    <a href="https://www.namebubbles.com/?rfsn=9102258.f8e3eb" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">Shop Name Bubbles</a>
-                </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">🥗</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">School Lunch Orders</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 0.6em; line-height: 1.65;">Order school lunches through <strong>Daily Spread</strong> via School Lunch Choice. Browse the menu and place your scholar's order online.</p>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">View the current month's menu before placing your order.</p>
-                    <div style="display: flex; flex-direction: column; gap: 0.6em; width: 100%; margin-top: auto;">
+                <!-- School Lunch Orders -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">🥗</p>
+                    <h3>School Lunch Orders</h3>
+                    <p>Order school lunches through <strong>Daily Spread</strong> via School Lunch Choice. Browse the menu and place your scholar's order online.</p>
+                    <div class="tile-buttons">
                         <a href="https://dailyspread.schoollunchchoice.com/index.php" target="_blank" rel="noopener" class="cta-button">Order Lunch — Daily Spread</a>
                         <a href="https://mcusercontent.com/bf6fdc6ce3cb7eca7df10550c/files/dcc348a7-7ea5-9426-546e-35c5905edc8b/2026_May_Lunch_Menu.pdf?mc_cid=2c787d4df2&mc_eid=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">View May Lunch Menu</a>
                     </div>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">💊</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">School Medication Forms</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Access official Valor Education school medical forms required for students who need medication administered at school.</p>
-                    <a href="https://www.valoreducation.org/school-medical-forms" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Medical Forms</a>
-                </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <div style="margin-bottom: 1em;">
-                        <img src="assets/newsletter-thumbs/bell-schedule.png" alt="School Bell Schedule" style="max-width: 120px; width: 100%; height: auto; border-radius: 6px; border: 2px solid #bd9b60; box-shadow: 0 2px 8px rgba(0,0,0,0.10);" />
+                <!-- School Medication Forms -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">💊</p>
+                    <h3>School Medication Forms</h3>
+                    <p>Access official Valor Education school medical forms required for students who need medication administered at school.</p>
+                    <div class="tile-buttons">
+                        <a href="https://www.valoreducation.org/school-medical-forms" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Medical Forms</a>
                     </div>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">School Bell Schedule</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">View the 2025–2026 Valor Leander school day schedule including start times and dismissal.</p>
-                    <a href="https://mcusercontent.com/bf6fdc6ce3cb7eca7df10550c/files/74bedc98-e287-20b1-9ce4-545bb3a41bb1/VL_School_Schedule_Times_2025_2026.03.pdf?mc_cid=2c787d4df2&mc_eid=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Bell Schedule</a>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <div style="margin-bottom: 1em;">
-                        <img src="assets/newsletter-thumbs/parent-comms-guidelines.png" alt="VL Parent Communication Guidelines" style="max-width: 120px; width: 100%; height: auto; border-radius: 6px; border: 2px solid #bd9b60; box-shadow: 0 2px 8px rgba(0,0,0,0.10);" />
+                <!-- School Bell Schedule -->
+                <div class="resource-tile">
+                    <img src="assets/newsletter-thumbs/bell-schedule.png" alt="School Bell Schedule" class="resource-tile-img" />
+                    <h3>School Bell Schedule</h3>
+                    <p>View the 2025–2026 Valor Leander school day schedule including start times and dismissal.</p>
+                    <div class="tile-buttons">
+                        <a href="https://mcusercontent.com/bf6fdc6ce3cb7eca7df10550c/files/74bedc98-e287-20b1-9ce4-545bb3a41bb1/VL_School_Schedule_Times_2025_2026.03.pdf?mc_cid=2c787d4df2&mc_eid=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Bell Schedule</a>
                     </div>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Important School Communication Information</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Review the Valor Leander Parent Communication Guidelines to understand how to best connect with faculty, staff, and school leadership.</p>
-                    <a href="https://static1.squarespace.com/static/62bb35f256ba253716ea0383/t/687bd5a12fd46c5f6024818e/1771956333148/VL+Parent+Comms+Guidelines.pdf" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Communication Guidelines</a>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">📋</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Absence or Early Checkout Procedure</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1em; line-height: 1.65;">When your scholar will be absent or needs an early checkout, please take the following steps:</p>
-                    <ol style="font-size: 0.88em; color: #555; text-align: left; margin: 0 0 1.2em; padding-left: 1.3em; line-height: 1.8;">
+                <!-- Important School Communication Information -->
+                <div class="resource-tile">
+                    <img src="assets/newsletter-thumbs/parent-comms-guidelines.png" alt="VL Parent Communication Guidelines" class="resource-tile-img" />
+                    <h3>Important School Communication Information</h3>
+                    <p>Review the Valor Leander Parent Communication Guidelines to understand how to best connect with faculty, staff, and school leadership.</p>
+                    <div class="tile-buttons">
+                        <a href="https://static1.squarespace.com/static/62bb35f256ba253716ea0383/t/687bd5a12fd46c5f6024818e/1771956333148/VL+Parent+Comms+Guidelines.pdf" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Communication Guidelines</a>
+                    </div>
+                </div>
+
+                <!-- Absence or Early Checkout -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">📋</p>
+                    <h3>Absence or Early Checkout Procedure</h3>
+                    <p>When your scholar will be absent or needs an early checkout, please take the following steps:</p>
+                    <ol>
                         <li>Email the attendance office to report the absence or checkout.</li>
                         <li>Message your scholar's faculty member directly through Jupiter Ed.</li>
                     </ol>
-                    <div style="display: flex; flex-direction: column; gap: 0.6em; width: 100%; margin-top: auto;">
+                    <div class="tile-buttons">
                         <a href="mailto:attendance.leander@valoreducation.org" class="cta-button" style="display: flex; align-items: center; justify-content: center; gap: 0.5em;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
                             Email Attendance
                         </a>
                         <a href="https://login.jupitered.com/login/index.php" target="_blank" rel="noopener" class="cta-button">Message Faculty on Jupiter</a>
                     </div>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">📰</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Most Recent Parent Newsletters</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1em; line-height: 1.65;">Stay informed with the latest newsletters sent directly from Valor Leander school leadership.</p>
-                    <div style="display: flex; flex-direction: column; gap: 0.6em; width: 100%; margin-top: auto;">
-                        <a href="https://mailchi.mp/valoreducation/vl-parent-newsletter-may-18?e=4957a8d4e3" target="_blank" rel="noopener" class="cta-button">May 18th Newsletter</a>
-                        <a href="https://mailchi.mp/valoreducation/vl-parent-newsletter-may-11?e=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="background-color: #a00a30; border-color: #a00a30;">May 11th Newsletter</a>
-                        <a href="https://us12.campaign-archive.com/?e=4957a8d4e3&u=bf6fdc6ce3cb7eca7df10550c&id=4d7f02167f" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">May 4th Newsletter</a>
+                <!-- Most Recent Parent Newsletters -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">📰</p>
+                    <h3>Most Recent Parent Newsletters</h3>
+                    <p>Stay informed with the latest newsletters sent directly from Valor Leander school leadership.</p>
+                    <div class="tile-buttons">
+                        <a href="https://mailchi.mp/valoreducation/vl-parent-newsletter-may-15090461?e=4957a8d4e3" target="_blank" rel="noopener" class="cta-button">May 25th Newsletter</a>
+                        <a href="https://mailchi.mp/valoreducation/vl-parent-newsletter-may-18?e=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="background-color: #a00a30; border-color: #a00a30;">May 18th Newsletter</a>
+                        <a href="https://mailchi.mp/valoreducation/vl-parent-newsletter-may-11?e=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">May 11th Newsletter</a>
                     </div>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #bd9b60; border-radius: 8px; padding: 1.8em 1.4em; background: #fffdf7; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">🎒</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">2026–2027 School Supply List</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">The supply list for the upcoming 2026–2027 school year will be posted here when available.</p>
-                    <p style="font-size: 0.85em; font-weight: 700; color: #bd9b60; letter-spacing: 0.08em; text-transform: uppercase; margin: auto 0 0; background: #f5efe0; border: 1px solid #e0d0a0; border-radius: 20px; padding: 0.4em 1.2em;">Coming Soon</p>
-                </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <div style="margin-bottom: 1em;">
-                        <img src="assets/newsletter-thumbs/reading-list.png" alt="Reading Lists for Lower and Upper School" style="max-width: 120px; width: 100%; height: auto; border-radius: 6px; border: 2px solid #bd9b60; box-shadow: 0 2px 8px rgba(0,0,0,0.10);" />
-                    </div>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Reading Lists for Lower &amp; Upper School</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Browse the 2025–2026 recommended reading lists for both Lower and Upper School scholars, complete with ISBNs for easy ordering.</p>
-                    <a href="https://mcusercontent.com/bf6fdc6ce3cb7eca7df10550c/files/4ebaecdd-bc00-899a-a6e0-e38e42c0179e/Valor_25_26_Reading_List_w_ISBN_072425.pdf?mc_cid=2c787d4df2&mc_eid=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Reading Lists</a>
-                </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">🔤</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Spalding Resources</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Support your scholar's phonics and literacy development at home with these official Spalding resources.</p>
-                    <div style="display: flex; flex-direction: column; gap: 0.6em; width: 100%; margin-top: auto;">
-                        <a href="https://spalding.org/product/phonogram-cards-individual-set-of-87-pc2/" target="_blank" rel="noopener" class="cta-button">Phonogram Cards for Home Use</a>
-                        <a href="https://spalding.org/product/spalding-phonograms-web-app-membership/" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">Spalding Phonogram Web App</a>
+                <!-- Reading Lists -->
+                <div class="resource-tile">
+                    <img src="assets/newsletter-thumbs/reading-list.png" alt="Reading Lists for Lower and Upper School" class="resource-tile-img" />
+                    <h3>Reading Lists for Lower &amp; Upper School</h3>
+                    <p>Browse the 2025–2026 recommended reading lists for both Lower and Upper School scholars, complete with ISBNs for easy ordering.</p>
+                    <div class="tile-buttons">
+                        <a href="https://mcusercontent.com/bf6fdc6ce3cb7eca7df10550c/files/4ebaecdd-bc00-899a-a6e0-e38e42c0179e/Valor_25_26_Reading_List_w_ISBN_072425.pdf?mc_cid=2c787d4df2&mc_eid=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Reading Lists</a>
                     </div>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">➕</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Singapore Math Online Sample Pages</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Browse free sample pages from Singapore Math curriculum to preview lessons and support your scholar's math practice at home.</p>
-                    <a href="https://www.singaporemath.com/pages/sample-pages" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Sample Pages</a>
-                </div>
-
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">🏅</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Griffin Athletics</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Visit the official Griffin Athletics page for schedules, team info, and news — or register your scholar for Summer 2026 Sports Camps.</p>
-                    <div style="display: flex; flex-direction: column; gap: 0.6em; width: 100%; margin-top: auto;">
+                <!-- Griffin Athletics -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">🏅</p>
+                    <h3>Griffin Athletics</h3>
+                    <p>Visit the official Griffin Athletics page for schedules, team info, and news — or register your scholar for Summer 2026 Sports Camps.</p>
+                    <div class="tile-buttons">
                         <a href="https://www.valorgriffinsathletics.org/" target="_blank" rel="noopener" class="cta-button">Griffin Athletics Page</a>
                         <a href="https://students.arbitersports.com/programs/2026-valor-leander-summer-sports-camps?mc_cid=2c787d4df2&mc_eid=4957a8d4e3" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">Summer 2026 Sports Camp Registration</a>
                     </div>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <p style="font-size: 2.2em; margin: 0 0 0.5em; line-height: 1;">⭐</p>
-                    <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Special Programs Information</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">Learn about the special programs available at Valor Education, including enrichment opportunities and unique academic offerings for your scholar.</p>
-                    <a href="https://www.valoreducation.org/special-programs" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Special Programs</a>
+                <!-- Family Handbook -->
+                <div class="resource-tile">
+                    <img src="assets/family-handbook-thumb.png" alt="Valor Leander Family Handbook" class="resource-tile-img" />
+                    <h3>Valor Leander Family Handbook</h3>
+                    <p>The essential guide for Valor Leander families — covering school policies, expectations, and community standards for the 2025–2026 school year.</p>
+                    <div class="tile-buttons">
+                        <a href="https://static1.squarespace.com/static/62bb35f256ba253716ea0383/t/687bd482a63e0b48568dcc50/1771956333148/2025-2026_+Family+Handbook_VL.pdf" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Handbook</a>
+                    </div>
                 </div>
 
-                <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.8em 1.4em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                    <div style="margin-bottom: 1em;">
-                        <img src="assets/family-handbook-thumb.png" alt="Valor Leander Family Handbook" style="max-width: 120px; width: 100%; height: auto; border-radius: 6px; border: 2px solid #bd9b60; box-shadow: 0 2px 8px rgba(0,0,0,0.10);" />
+            </div>
+
+            <!-- ===== SECTION 2 ===== -->
+            <p class="resource-section-heading">Helpful Information for Current Families</p>
+
+            <div class="resource-grid">
+
+                <!-- PSO Tips & Tricks -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">💡</p>
+                    <h3>PSO Tips &amp; Tricks For Families</h3>
+                    <p>Browse our Tips &amp; Tricks pages for all grades — insider knowledge to help your family make the most of the Valor Leander experience.</p>
+                    <div class="tile-buttons">
+                        <a href="https://canva.link/vlpsotipsntricks" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Tips &amp; Tricks</a>
                     </div>
-                    <h3 style="color: #333; margin: 0 0 0.4em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Valor Leander Family Handbook</h3>
-                    <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em;">The essential guide for Valor Leander families — covering school policies, expectations, and community standards for the 2025–2026 school year.</p>
-                    <a href="https://static1.squarespace.com/static/62bb35f256ba253716ea0383/t/687bd482a63e0b48568dcc50/1771956333148/2025-2026_+Family+Handbook_VL.pdf" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Handbook</a>
+                </div>
+
+                <!-- Kids Discount Meals -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">🍽️</p>
+                    <h3>Kids Discount Meals</h3>
+                    <p>Restaurants and eateries offering kids discount meals — a great way to save while dining out with your family.</p>
+                    <div class="tile-buttons">
+                        <a href="https://canva.link/kidsmeals" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Kids Meals</a>
+                    </div>
+                </div>
+
+                <!-- Crystal Falls Carline Etiquette -->
+                <div class="resource-tile">
+                    <img src="assets/cf-carline-etiquette.png" alt="Crystal Falls Carline Etiquette" class="resource-tile-img" />
+                    <h3>Crystal Falls Carline Etiquette</h3>
+                    <p>Guidelines for a safe and respectful carline experience at the Crystal Falls campus.</p>
+                    <div class="tile-buttons">
+                        <a href="assets/cf-carline-etiquette.png" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Guidelines</a>
+                    </div>
+                </div>
+
+                <!-- Name Bubbles -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">🏷️</p>
+                    <h3>Name Bubbles Custom Labels</h3>
+                    <p>Label your scholar's belongings with personalized Name Bubbles stickers and tags. A portion of every purchase comes back to support the PSO!</p>
+                    <div class="tile-buttons">
+                        <a href="https://www.namebubbles.com/?rfsn=9102258.f8e3eb" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">Shop Name Bubbles</a>
+                    </div>
+                </div>
+
+                <!-- 2026-2027 School Supply List -->
+                <div class="resource-tile resource-tile--gold">
+                    <p class="resource-tile-icon">🎒</p>
+                    <h3>2026–2027 School Supply List</h3>
+                    <p>The supply list for the upcoming 2026–2027 school year will be posted here when available.</p>
+                    <p class="coming-soon-badge">Coming Soon</p>
+                </div>
+
+                <!-- Spalding Resources -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">🔤</p>
+                    <h3>Spalding Resources</h3>
+                    <p>Support your scholar's phonics and literacy development at home with these official Spalding resources.</p>
+                    <div class="tile-buttons">
+                        <a href="https://spalding.org/product/phonogram-cards-individual-set-of-87-pc2/" target="_blank" rel="noopener" class="cta-button">Phonogram Cards for Home Use</a>
+                        <a href="https://spalding.org/product/spalding-phonograms-web-app-membership/" target="_blank" rel="noopener" class="cta-button" style="background-color: #bd9b60; border-color: #bd9b60;">Spalding Phonogram Web App</a>
+                    </div>
+                </div>
+
+                <!-- Singapore Math -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">➕</p>
+                    <h3>Singapore Math Online Sample Pages</h3>
+                    <p>Browse free sample pages from Singapore Math curriculum to preview lessons and support your scholar's math practice at home.</p>
+                    <div class="tile-buttons">
+                        <a href="https://www.singaporemath.com/pages/sample-pages" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Sample Pages</a>
+                    </div>
+                </div>
+
+                <!-- Special Programs -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">⭐</p>
+                    <h3>Special Programs Information</h3>
+                    <p>Learn about the special programs available at Valor Education, including enrichment opportunities and unique academic offerings for your scholar.</p>
+                    <div class="tile-buttons">
+                        <a href="https://www.valoreducation.org/special-programs" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">View Special Programs</a>
+                    </div>
                 </div>
 
             </div>
