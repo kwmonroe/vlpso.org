@@ -612,11 +612,10 @@ footer p {
     color: #ffffff;        /* Makes the hyphens white */
     padding: 0 5px;        /* Adds a tiny bit of space around the hyphen */
 }
-
-/* Target the links inside the list */
+/* Target the links inside the list and force them to be white */
 .quick-links a {
-    color: #ffffff;        /* Changes the font color to WHITE */
-    text-decoration: none; /* Removes the underline */
+    color: #ffffff !important; /* Forces the font color to WHITE */
+    text-decoration: none; 
 }
 
 /* Optional: Keep a hover effect so users know they are links */
