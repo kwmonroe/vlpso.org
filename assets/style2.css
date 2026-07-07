@@ -591,3 +591,23 @@ footer p {
     height: auto;
     object-fit: contain;
 }
+
+
+/* Target the quick-links container */
+.quick-links ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0;            /* Removes default browser indentation */
+    margin: 0;
+}
+
+/* Target the links inside the list */
+.quick-links a {
+    color: #333333;        /* Changes font color from red to a dark gray (or choose your preferred color) */
+    text-decoration: none; /* Optional: Removes the underline from links */
+}
+
+/* Optional: Add a hover effect so users know they are clickable */
+.quick-links a:hover {
+    color: #0066cc;        /* Changes color when hovered */
+    text-decoration: underline;
+}
