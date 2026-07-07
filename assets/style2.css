@@ -602,7 +602,7 @@ footer p {
 
 /* Target the links inside the list */
 .quick-links a {
-    color: #333333;        /* Changes font color from red to a dark gray (or choose your preferred color) */
+    color: #FFFFFF;        /* Changes font color from red to a dark gray (or choose your preferred color) */
     text-decoration: none; /* Optional: Removes the underline from links */
 }
 
