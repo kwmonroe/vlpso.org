@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-NHDJH4P9P1');    
     </script>
   
@@ -28,25 +27,192 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Shared Content Layout Elements */
+        .text-center-block {
+            text-align: center;
+            margin-bottom: 1.6em;
+        }
+        .purpose-heading {
+            margin: 0 0 0.6em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            letter-spacing: 0.02em;
+        }
+        .section-intro-text {
+            margin-bottom: 1em;
+            color: #555;
+            font-size: 0.96em;
+        }
+        .body-p-styled {
+            color: #555;
+            font-size: 0.96em;
+            line-height: 1.75;
+            margin-bottom: 0.8em;
+        }
+
+        /* Responsive Grid Framework */
+        .pso-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 0.9em;
+            margin-bottom: 2em;
+        }
+
+        /* Core Three Pillars Cards (Red left-borders) */
+        .pillar-card {
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #c40d3c;
+            border-radius: 6px;
+            padding: 1em 1.1em;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .pillar-card-title {
+            margin: 0 0 0.3em;
+            font-size: 0.82em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #c40d3c;
+            font-weight: 700;
+        }
+        .pillar-card-text {
+            margin: 0;
+            font-size: 0.88em;
+            color: #444;
+            line-height: 1.65;
+        }
+
+        /* Resource Links / Channel Cards (Red top-borders) */
+        .resource-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.2em 1.1em;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .resource-tile-title {
+            font-size: 0.78em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #c40d3c;
+            font-weight: 700;
+            margin: 0 0 0.3em;
+        }
+        .resource-tile-text {
+            font-size: 0.84em;
+            color: #555;
+            line-height: 1.6;
+            margin: 0 0 1em;
+            flex: 1;
+        }
+        .resource-tile .cta-button {
+            font-size: 0.82em;
+            padding: 0.45em 0.9em;
+            margin-top: auto;
+        }
+
+        /* Co-Chair Callout & Profiles Layout */
+        .cochair-header-banner {
+            background: #2e4070;
+            border-radius: 10px;
+            padding: 2em 2em 2.2em;
+            margin-top: 0.5em;
+            text-align: center;
+            margin-bottom: 1.6em;
+        }
+        .cochair-banner-title {
+            margin: 0 0 0.6em;
+            color: #ffffff;
+            font-size: 1.35em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            letter-spacing: 0.02em;
+        }
+        .cochair-banner-img {
+            max-width: 240px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #bd9b60;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+            margin-bottom: 1em;
+        }
+        .cochair-email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45em;
+            color: #bd9b60;
+            font-size: 0.9em;
+            text-decoration: none;
+            border-bottom: 1px solid #bd9b60;
+            padding-bottom: 0.1em;
+        }
+        
+        /* Bio Layout */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.2em;
+        }
+        .bio-card {
+            background: #0f1b36;
+            border: 1px solid #2e4070;
+            border-top: 4px solid #bd9b60;
+            border-radius: 8px;
+            padding: 1.5em 1.4em;
+        }
+        .bio-profile-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75em;
+            margin-bottom: 0.8em;
+        }
+        .bio-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 6px;
+            object-fit: cover;
+            object-position: top;
+            flex-shrink: 0;
+            border: 2px solid #bd9b60;
+        }
+        .bio-name {
+            color: #bd9b60;
+            margin: 0;
+            font-size: 1.05em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+        }
+        .bio-text {
+            font-size: 0.88em;
+            color: #c8d0e0;
+            line-height: 1.75;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <img src="assets/griffin_logo.png" alt="Valor Leander logo" class="header-logo">
-        <div class="header-center-content"> <!-- Wrapper for H1 and Nav -->
+        <div class="header-center-content">
             <h1>Valor Leander Parent Service Organization</h1>
             <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
             <nav>
-                                    <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="family-resources.html">Family Resources</a></li>  
-                <li><a href="volunteers.html">Volunteers</a></li>
-                <li><a href="classes.html">Family Networking</a></li>
-                <li><a href="family-socials.html">Family Socials</a></li>
-                <li><a href="fall-festival.html">Fall Festival</a></li>
-                <li><a href="faculty-favorites.html">Faculty Favorites</a></li>
-                <li><a href="newsletters.html">PSO Newsletters</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="family-resources.html">Family Resources</a></li>  
+                    <li><a href="volunteers.html">Volunteers</a></li>
+                    <li><a href="classes.html">Family Networking</a></li>
+                    <li><a href="family-socials.html">Family Socials</a></li>
+                    <li><a href="fall-festival.html">Fall Festival</a></li>
+                    <li><a href="faculty-favorites.html">Faculty Favorites</a></li>
+                    <li><a href="newsletters.html">PSO Newsletters</a></li>
+                </ul>
             </nav>
         </div>
         <img src="assets/griffin_logo.png" alt="Valor Leander logo" class="header-logo">
@@ -57,137 +223,125 @@
             <section class="content-box welcome-section">
                 <h2>About the PSO</h2>
 
-            <!-- Our Purpose Section (cleaned)  -->
-<div style="text-align: center; margin-bottom: 1.6em;">
-
-    <h3 style="margin: 0 0 0.6em; font-family: 'Libre Baskerville', Georgia, serif; letter-spacing: 0.02em;">
-        Our Purpose
-    </h3>
-<p>Valor's PSO exists to support and enrich the school community through purposeful service, meaningful partnership, and active engagement. We strive to uphold the school’s values by fostering a spirit of unity among parents, staff, and students by working together to serve with excellence, humility, and joy. </p>
-</div>
+                <!-- Our Purpose Section -->
+                <div class="text-center-block">
+                    <h3 class="purpose-heading">Our Purpose</h3>
+                    <p>Valor's PSO exists to support and enrich the school community through purposeful service, meaningful partnership, and active engagement. We strive to uphold the school’s values by fostering a spirit of unity among parents, staff, and students by working together to serve with excellence, humility, and joy.</p>
+                </div>
 
                 <!-- What We Do -->
                 <h3 style="margin-bottom: 0.6em;">What We Do</h3>
-                <p style="margin-bottom: 1em; color: #555; font-size: 0.96em;">Our efforts are focused on three key areas of service:</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0.8em; margin-bottom: 2em;">
-                    <div style="border: 1px solid #e0e0e0; border-left: 4px solid #c40d3c; border-radius: 6px; padding: 1em 1.1em; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                        <p style="margin: 0 0 0.3em; font-size: 0.82em; letter-spacing: 0.1em; text-transform: uppercase; color: #c40d3c; font-weight: 700;">Supporting Faculty &amp; Staff</p>
-                        <p style="margin: 0; font-size: 0.88em; color: #444; line-height: 1.65;">We organize teacher appreciation events, coordinate classroom volunteers, and help fulfill classroom needs so our educators feel valued and well-resourced.</p>
+                <p class="section-intro-text">Our efforts are focused on three key areas of service:</p>
+                
+                <div class="pso-grid">
+                    <div class="pillar-card">
+                        <p class="pillar-card-title">Supporting Faculty &amp; Staff</p>
+                        <p class="pillar-card-text">We organize teacher appreciation events, coordinate classroom volunteers, and help fulfill classroom needs so our educators feel valued and well-resourced.</p>
                     </div>
-                    <div style="border: 1px solid #e0e0e0; border-left: 4px solid #c40d3c; border-radius: 6px; padding: 1em 1.1em; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                        <p style="margin: 0 0 0.3em; font-size: 0.82em; letter-spacing: 0.1em; text-transform: uppercase; color: #c40d3c; font-weight: 700;">Enhancing Student Life</p>
-                        <p style="margin: 0; font-size: 0.88em; color: #444; line-height: 1.65;">The PSO helps organize and support activities and events that enrich the student experience and complement Valor's classical curriculum.</p>
+                    <div class="pillar-card">
+                        <p class="pillar-card-title">Enhancing Student Life</p>
+                        <p class="pillar-card-text">The PSO helps organize and support activities and events that enrich the student experience and complement Valor's classical curriculum.</p>
                     </div>
-                    <div style="border: 1px solid #e0e0e0; border-left: 4px solid #c40d3c; border-radius: 6px; padding: 1em 1.1em; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-                        <p style="margin: 0 0 0.3em; font-size: 0.82em; letter-spacing: 0.1em; text-transform: uppercase; color: #c40d3c; font-weight: 700;">Building Community</p>
-                        <p style="margin: 0; font-size: 0.88em; color: #444; line-height: 1.65;">We create meaningful opportunities for parents and families to connect through social events, informational meetings, and volunteer initiatives.</p>
+                    <div class="pillar-card">
+                        <p class="pillar-card-title">Building Community</p>
+                        <p class="pillar-card-text">We create meaningful opportunities for parents and families to connect through social events, informational meetings, and volunteer initiatives.</p>
                     </div>
                 </div>
 
                 <!-- Get Involved -->
                 <h3 style="margin-bottom: 0.6em;">Get Involved</h3>
-                <p style="color: #555; font-size: 0.96em; line-height: 1.75; margin-bottom: 0.8em;">Every Valor Leander parent is automatically a member of the PSO. We encourage you to get involved in any way that fits your schedule and interests — whether that is volunteering your time, attending events, or contributing to fundraising efforts. Your participation directly benefits our students and strengthens our unique school culture.</p>
-                <p style="color: #555; font-size: 0.96em; line-height: 1.75; margin-bottom: 1.2em;">Before volunteering or joining an active PSO role, please review our volunteering page to understand the requirements and current opportunities available.</p>
+                <p class="body-p-styled">Every Valor Leander parent is automatically a member of the PSO. We encourage you to get involved in any way that fits your schedule and interests — whether that is volunteering your time, attending events, or contributing to fundraising efforts. Your participation directly benefits our students and strengthens our unique school culture.</p>
+                <p class="body-p-styled" style="margin-bottom: 1.2em;">Before volunteering or joining an active PSO role, please review our volunteering page to understand the requirements and current opportunities available.</p>
                 <a href="volunteering.html" class="cta-button" style="display: inline-block; margin-bottom: 2em;">View Volunteer Requirements &amp; Opportunities</a>
 
                 <!-- Stay Connected -->
                 <h3 style="margin-bottom: 0.6em;">PSO Resources &amp; Community</h3>
-                <p style="color: #555; font-size: 0.96em; line-height: 1.75; margin-bottom: 1em;">Stay connected with the PSO and access important resources below.</p>
+                <p class="section-intro-text">Stay connected with the PSO and access important resources below.</p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0.9em; margin-bottom: 2em;">
-
-                    <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.2em 1.1em; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <p style="font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #c40d3c; font-weight: 700; margin: 0 0 0.3em;">Monthly Meetings</p>
-                        <p style="font-size: 0.84em; color: #555; line-height: 1.6; margin: 0 0 1em; flex: 1;">Monthly PSO meetings are held virtually at 10:00 AM, typically the third Thursday of each month. All families are welcome to join.</p>
-                        <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_MTJlMGRlMTctNTZlMy00NjU4LTgwYjEtYjU0OThmNDU1ZGQx%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c570c4bd-06c3-407b-a694-941afb40b7ef%2522%252c%2522Oid%2522%253a%25221f3a4e6a-e141-4913-8a3c-6001401b0072%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=cb00e054-3b31-439f-ab23-f5ef1e1ad27c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.82em; padding: 0.45em 0.9em; margin-top: auto;">Join Monthly Meeting</a>
+                <div class="pso-grid">
+                    <!-- Monthly Meetings -->
+                    <div class="resource-tile">
+                        <p class="resource-tile-title">Monthly Meetings</p>
+                        <p class="resource-tile-text">Monthly PSO meetings are held virtually at 10:00 AM, typically the third Thursday of each month. All families are welcome to join.</p>
+                        <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_MTJlMGRlMTctNTZlMy00NjU4LTgwYjEtYjU0OThmNDU1ZGQx%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522c570c4bd-06c3-407b-a694-941afb40b7ef%2522%252c%2522Oid%2522%253a%25221f3a4e6a-e141-4913-8a3c-6001401b0072%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=cb00e054-3b31-439f-ab23-f5ef1e1ad27c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true" target="_blank" rel="noopener" class="cta-button">Join Monthly Meeting</a>
                     </div>
 
-                    <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.2em 1.1em; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <p style="font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #c40d3c; font-weight: 700; margin: 0 0 0.3em;">PSO Facebook Group</p>
-                        <p style="font-size: 0.84em; color: #555; line-height: 1.6; margin: 0 0 1em; flex: 1;">Stay up to date on PSO announcements, volunteer opportunities, school news, and community events in our Facebook group.</p>
-                        <a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.82em; padding: 0.45em 0.9em; margin-top: auto;">Join Facebook Group</a>
+                    <!-- Facebook Group -->
+                    <div class="resource-tile">
+                        <p class="resource-tile-title">PSO Facebook Group</p>
+                        <p class="resource-tile-text">Stay up to date on PSO announcements, volunteer opportunities, school news, and community events in our Facebook group.</p>
+                        <a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener" class="cta-button">Join Facebook Group</a>
                     </div>
 
-                    <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.2em 1.1em; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <p style="font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #c40d3c; font-weight: 700; margin: 0 0 0.3em;">GroupMe</p>
-                        <p style="font-size: 0.84em; color: #555; line-height: 1.6; margin: 0 0 1em; flex: 1;">Join the Valor Leander PSO GroupMe for quick updates, conversations, and community connection on the go.</p>
-                        <a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.82em; padding: 0.45em 0.9em; margin-top: auto;">Join GroupMe</a>
-                    </div>
-
-                </div>
-
-<!-- Meet Your PSO Co-Chairs -->
-<div style="background: #2e4070; border-radius: 10px; padding: 2em 2em 2.2em; margin-top: 0.5em; border: none;">
-
-    <div style="text-align: center; margin-bottom: 1.6em; border: none;">
-
-        <h3 style="margin: 0 0 0.6em; color: #ffffff; font-size: 1.35em; font-family: 'Libre Baskerville', Georgia, serif; letter-spacing: 0.02em; border-top: none; border-bottom: none;">
-            Meet Your PSO Co-Chairs
-        </h3>
-
-        <img src="assets/pso-cochairs.jpg" alt="Valor Leander PSO Co-Chairs" style="max-width: 240px; width: 100%; height: auto; border-radius: 8px; border: 3px solid #bd9b60; box-shadow: 0 4px 14px rgba(0,0,0,0.3); margin-bottom: 1em;" />
-
-        <br />
-
-        <a href="mailto:PSO.leander@valoreducation.org" style="display: inline-flex; align-items: center; gap: 0.45em; color: #bd9b60; font-size: 0.9em; text-decoration: none; border-bottom: 1px solid #bd9b60; padding-bottom: 0.1em;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-            PSO.leander@valoreducation.org
-        </a>
-
-    </div>
-</div>
-
-                    <!-- Bio cards -->
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.2em;">
-
-                        <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 4px solid #bd9b60; border-radius: 8px; padding: 1.5em 1.4em;">
-                            <div style="display: flex; align-items: center; gap: 0.75em; margin-bottom: 0.8em;">
-                                <img src="assets/lauren-amani.jpg" alt="Lauren Amani" style="width: 56px; height: 56px; border-radius: 6px; object-fit: cover; object-position: top; flex-shrink: 0; border: 2px solid #bd9b60;" />
-                                <h4 style="color: #bd9b60; margin: 0; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Lauren Amani</h4>
-                            </div>
-                            <p style="font-size: 0.88em; color: #c8d0e0; line-height: 1.75; margin: 0;">A super mom of two, proud wife of a Texas Ranger (law enforcement, not baseball, y’all), and an accomplished finance & operations professional. As a dedicated leader and volunteer with the Valor Leander PSO, she combines her strengths in budgeting, planning, communication, and event coordination to help create meaningful experiences for students, staff, and families. Whether she’s managing finances, organizing large-scale events, solving operational challenges, or supporting her community, Lauren brings energy, efficiency, and a genuine heart for service to everything she does.</p>
-                        </div>
-
-                        <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 4px solid #bd9b60; border-radius: 8px; padding: 1.5em 1.4em;">
-                            <div style="display: flex; align-items: center; gap: 0.75em; margin-bottom: 0.8em;">
-                                <img src="assets/ashley-hollister.jpg" alt="Ashley Hollister" style="width: 56px; height: 56px; border-radius: 6px; object-fit: cover; object-position: top; flex-shrink: 0; border: 2px solid #bd9b60;" />
-                                <h4 style="color: #bd9b60; margin: 0; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Ashley Hollister</h4>
-                            </div>
-                            <p style="font-size: 0.88em; color: #c8d0e0; line-height: 1.75; margin: 0 0 0.8em;">A sports mom of three who spends her days navigating two campuses and a nonstop schedule filled with soccer, competitive cheer, football, and everything in between. Since 2023, Ashley has proudly served as a PSO Co-Chair, supporting scholars, families, and faculty since Valor Leander first opened its doors. By day, she's a part-time receptionist at Crystal Falls; by passion, she's an event-planning and organization powerhouse who thrives on bringing people together.</p>
-                            <p style="font-size: 0.88em; color: #c8d0e0; line-height: 1.75; margin: 0;">Known for her love of serving others, building community, and making endless lists to keep life on track, Ashley believes organization is truly her jam. Friendly, energetic, and always ready to chat, she brings heart, humor, and dedication to every event and every family she supports through the PSO.</p>
-                        </div>
-
-                        <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 4px solid #bd9b60; border-radius: 8px; padding: 1.5em 1.4em;">
-                            <div style="display: flex; align-items: center; gap: 0.75em; margin-bottom: 0.8em;">
-                                <img src="assets/laura-monroe.jpg" alt="Laura Monroe" style="width: 56px; height: 56px; border-radius: 6px; object-fit: cover; object-position: top; flex-shrink: 0; border: 2px solid #bd9b60;" />
-                                <h4 style="color: #bd9b60; margin: 0; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">Laura Monroe</h4>
-                            </div>
-                            <p style="font-size: 0.88em; color: #c8d0e0; line-height: 1.75; margin: 0;">A super mom of three, dual-campus driving champion, and self-proclaimed carpool ninja who somehow keeps it all running smoothly. As a proud "cat foster fail" mom, Laura's heart for caring extends far beyond her home and into the Valor community. From planning Upper School and Kauffman IHP events to stretching every dollar with budget-savvy creativity, she has been a driving force behind the PSO for the past two years. Armed with her Cricut machine, endless craft ideas, and unmatched dedication, Laura brings organization, creativity, and community spirit to everything she touches.</p>
-                        </div>
-
+                    <!-- GroupMe -->
+                    <div class="resource-tile">
+                        <p class="resource-tile-title">GroupMe</p>
+                        <p class="resource-tile-text">Join the Valor Leander PSO GroupMe for quick updates, conversations, and community connection on the go.</p>
+                        <a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener" class="cta-button">Join GroupMe</a>
                     </div>
                 </div>
+
+                <!-- Meet Your PSO Co-Chairs Header -->
+                <div class="cochair-header-banner">
+                    <h3 class="cochair-banner-title">Meet Your PSO Co-Chairs</h3>
+                    <img src="assets/pso-cochairs.jpg" alt="Valor Leander PSO Co-Chairs" class="cochair-banner-img" />
+                    <br />
+                    <a href="mailto:PSO.leander@valoreducation.org" class="cochair-email-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                        PSO.leander@valoreducation.org
+                    </a>
+                </div>
+
+                <!-- Bio Cards Container Layout Grid -->
+                <div class="bio-grid">
+                    <!-- Lauren Amani Card -->
+                    <div class="bio-card">
+                        <div class="bio-profile-header">
+                            <img src="assets/lauren-amani.jpg" alt="Lauren Amani" class="bio-avatar" />
+                            <h4 class="bio-name">Lauren Amani</h4>
+                        </div>
+                        <p class="bio-text">A super mom of two, proud wife of a Texas Ranger (law enforcement, not baseball, y’all), and an accomplished finance & operations professional. As a dedicated leader and volunteer with the Valor Leander PSO, she combines her strengths in budgeting, planning, communication, and event coordination to help create meaningful experiences for students, staff, and families. Whether she’s managing finances, organizing large-scale events, solving operational challenges, or supporting her community, Lauren brings energy, efficiency, and a genuine heart for service to everything she does.</p>
+                    </div>
+
+                    <!-- Ashley Hollister Card -->
+                    <div class="bio-card">
+                        <div class="bio-profile-header">
+                            <img src="assets/ashley-hollister.jpg" alt="Ashley Hollister" class="bio-avatar" />
+                            <h4 class="bio-name">Ashley Hollister</h4>
+                        </div>
+                        <p class="bio-text" style="margin-bottom: 0.8em;">A sports mom of three who spends her days navigating two campuses and a nonstop schedule filled with soccer, competitive cheer, football, and everything in between. Since 2023, Ashley has proudly served as a PSO Co-Chair, supporting scholars, families, and faculty since Valor Leander first opened its doors. By day, she's a part-time receptionist at Crystal Falls; by passion, she's an event-planning and organization powerhouse who thrives on bringing people together.</p>
+                        <p class="bio-text">Known for her love of serving others, building community, and making endless lists to keep life on track, Ashley believes organization is truly her jam. Friendly, energetic, and always ready to chat, she brings heart, humor, and dedication to every event and every family she supports through the PSO.</p>
+                    </div>
+
+                    <!-- Laura Monroe Card -->
+                    <div class="bio-card">
+                        <div class="bio-profile-header">
+                            <img src="assets/laura-monroe.jpg" alt="Laura Monroe" class="bio-avatar" />
+                            <h4 class="bio-name">Laura Monroe</h4>
+                        </div>
+                        <p class="bio-text">A super mom of three, dual-campus driving champion, and self-proclaimed carpool ninja who somehow keeps it all running smoothly. As a proud "cat foster fail" mom, Laura's heart for caring extends far beyond her home and into the Valor community. From planning Upper School and Kauffman IHP events to stretching every dollar with budget-savvy creativity, she has been a driving force behind the PSO for the past two years. Armed with her Cricut machine, endless craft ideas, and unmatched dedication, Laura brings organization, creativity, and community spirit to everything she touches.</p>
+                    </div>
+                </div>
+
             </section>
         </main>
     </div>
 
-<footer>
-
-    <nav class="quick-links" aria-label="Quick links">
-        <ul>
-            <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
-            <li><a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener">Volunteer Background Check</a></li>
-            <li><a href="https://login.jupitered.com/login/?mc_cid=d80cde37a4&mc_eid=50836b3a15" target="_blank" rel="noopener">Jupiter</a></li>
-            <li><a href="https://valoreducation.schoolaxis.com/?mc_cid=d80cde37a4&mc_eid=50836b3a15" target="_blank" rel="noopener">SchoolAxis</a></li>
-            <li><a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener">PSO Facebook</a></li>
-            <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
-            <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
-        </ul>
-</nav>
-
-    <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
-</footer>
-    
-<script src="assets/main.js"></script>
+    <footer>
+        <nav class="quick-links" aria-label="Quick links">
+            <ul>
+                <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
+                <li><a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener">Volunteer Background Check</a></li>
+                <li><a href="https://login.jupitered.com/login/?mc_cid=d80cde37a4&mc_eid=50836b3a15" target="_blank" rel="noopener">Jupiter</a></li>
+                <li><a href="https://valoreducation.schoolaxis.com/?mc_cid=d80cde37a4&mc_eid=50836b3a15" target="_blank" rel="noopener">SchoolAxis</a></li>
+                <li><a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener">PSO Facebook</a></li>
+                <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
+                <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
+            </ul>
+        </nav>
+        <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
+    </footer>
+        
+    <script src="assets/main.js"></script>
 </body>
 </html>
