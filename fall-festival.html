@@ -6,7 +6,7 @@
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());   
+    gtag('js', new Date());
     gtag('config', 'G-NHDJH4P9P1');
     </script>
 
@@ -27,6 +27,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Feature Promo Banner Container */
+        .festival-banner {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            margin-bottom: 2.5em;
+        }
+        .festival-banner-header {
+            background-color: #c40d3c;
+            padding: 1.4em 2em;
+            text-align: center;
+        }
+        .festival-banner-header h3 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #ffffff;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            letter-spacing: 0.03em;
+        }
+        .festival-banner-subtitle {
+            margin: 0.4em 0 0;
+            font-size: 0.9em;
+            color: #f8d89a;
+            letter-spacing: 0.08em;
+        }
+        .festival-banner-body {
+            padding: 2em 2em 2.2em;
+            text-align: center;
+        }
+        .festival-date-callout {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #bd9b60;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: 0 0 0.5em;
+        }
+        .festival-banner-text {
+            font-size: 0.98em;
+            color: #555;
+            max-width: 580px;
+            margin: 0 auto 1.6em;
+            line-height: 1.75;
+        }
+        .festival-banner-divider {
+            border-top: 1px solid #e7e7e7;
+            margin: 0 auto 1.8em;
+            max-width: 200px;
+        }
+        .festival-banner .cta-button {
+            font-size: 1em;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Core Three Pillar Layout Matrix */
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2em;
+        }
+        .pillar-card {
+            border: 1px solid #e7e7e7;
+            border-top: 3px solid #c40d3c;
+            border-radius: 6px;
+            padding: 1.5em 1.3em;
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        .pillar-card-icon {
+            font-size: 1.8em;
+            margin: 0 0 0.4em;
+            line-height: 1;
+        }
+        .pillar-card-title {
+            margin: 0 0 0.4em;
+        }
+        .pillar-card-title strong {
+            color: #c40d3c;
+            font-size: 0.95em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+        }
+        .pillar-card-text {
+            margin: 0;
+            font-size: 0.88em;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +132,8 @@
     <div class="header-center-content">
         <h1>Valor Leander Parent Service Organization</h1>
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-        <nav><ul>
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>    
                 <li><a href="family-resources.html">Family Resources</a></li>
@@ -61,48 +158,50 @@
                 Mark your calendars — the Griffin community's most beloved tradition is coming back bigger and better than ever.
             </p>
 
-            <!-- Main Coming Soon banner -->
-            <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; background: #fff; box-shadow: 0 3px 12px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 2em;">
-
-                <!-- Gold accent header bar -->
-                <div style="background-color: #c40d3c; padding: 1.4em 2em; text-align: center;">
-                    <h3 style="margin: 0; font-size: 1.8em; color: #ffffff; font-family: 'Libre Baskerville', Georgia, serif; letter-spacing: 0.03em;">Valor Leander Fall Festival</h3>
-                    <p style="margin: 0.4em 0 0; font-size: 0.9em; color: #f8d89a; letter-spacing: 0.08em;">🎃 &nbsp; Fall 2026 &nbsp; 🎃</p>
+            <!-- Main Coming Soon Promo Banner Module -->
+            <div class="festival-banner">
+                <!-- Banner Title Strip -->
+                <div class="festival-banner-header">
+                    <h3>Valor Leander Fall Festival</h3>
+                    <p class="festival-banner-subtitle">🎃 &nbsp; Fall 2026 &nbsp; 🎃</p>
                 </div>
 
-                <!-- Body -->
-                <div style="padding: 2em 2em 2.2em; text-align: center;">
-                    <p style="font-size: 1.5em; font-weight: 700; color: #bd9b60; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.5em;">Save the Date: November 14, 2026</p>
-                    <p style="font-size: 0.98em; color: #555; max-width: 580px; margin: 0 auto 1.6em; line-height: 1.75;">
+                <!-- Banner Descriptive Content -->
+                <div class="festival-banner-body">
+                    <p class="festival-date-callout">Save the Date: November 14, 2026</p>
+                    <p class="festival-banner-text">
                         The Fall Festival is the <strong>biggest event of the Valor Leander school year</strong> — a beloved tradition that brings our entire Griffin community together for an unforgettable day of fun, fellowship, and school spirit. It takes an incredible amount of volunteers and family support to make it happen, and every pair of hands makes a difference.
                     </p>
-                    <p style="font-size: 0.98em; color: #555; max-width: 580px; margin: 0 auto 2em; line-height: 1.75;">
+                    <p class="festival-banner-text" style="margin-bottom: 2em;">
                         We are so excited to begin planning the 4th Annual Fall Festival! If you'd like to help plan and execute this year's festival, please fill out the PSO Volunteer Interest Form — we'd love to have you on the team!
                     </p>
 
-                    <!-- Decorative divider -->
-                    <div style="border-top: 1px solid #e7e7e7; margin: 0 auto 1.8em; max-width: 200px;"></div>
+                    <!-- Graphic Trim Divider Line -->
+                    <div class="festival-banner-divider"></div>
 
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener" class="cta-button" style="font-size: 1em; padding: 0.8em 2em;">Sign Up to Help Plan the Fall Festival</a>
+                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener" class="cta-button">Sign Up to Help Plan the Fall Festival</a>
                 </div>
             </div>
 
-            <!-- Three pillar cards -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1em;">
-                <div style="border: 1px solid #e7e7e7; border-top: 3px solid #c40d3c; border-radius: 6px; padding: 1.3em; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-align: center;">
-                    <p style="font-size: 1.8em; margin: 0 0 0.4em;">🎡</p>
-                    <p style="margin: 0 0 0.3em;"><strong style="color: #c40d3c;">Community Fun</strong></p>
-                    <p style="margin: 0; font-size: 0.88em; color: #555;">Games, activities, and entertainment for the whole Griffin family to enjoy together.</p>
+            <!-- Focus Pillars Three-Column Layout Matrix -->
+            <div class="pillar-grid">
+                <!-- Pillar 1 -->
+                <div class="pillar-card">
+                    <p class="pillar-card-icon">🎡</p>
+                    <p class="pillar-card-title"><strong>Community Fun</strong></p>
+                    <p class="pillar-card-text">Games, activities, and entertainment for the whole Griffin family to enjoy together.</p>
                 </div>
-                <div style="border: 1px solid #e7e7e7; border-top: 3px solid #c40d3c; border-radius: 6px; padding: 1.3em; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-align: center;">
-                    <p style="font-size: 1.8em; margin: 0 0 0.4em;">🤝</p>
-                    <p style="margin: 0 0 0.3em;"><strong style="color: #c40d3c;">Volunteer Driven</strong></p>
-                    <p style="margin: 0; font-size: 0.88em; color: #555;">This event is made possible entirely by the dedication and generosity of our parent volunteers.</p>
+                <!-- Pillar 2 -->
+                <div class="pillar-card">
+                    <p class="pillar-card-icon">🤝</p>
+                    <p class="pillar-card-title"><strong>Volunteer Driven</strong></p>
+                    <p class="pillar-card-text">This event is made possible entirely by the dedication and generosity of our parent volunteers.</p>
                 </div>
-                <div style="border: 1px solid #e7e7e7; border-top: 3px solid #c40d3c; border-radius: 6px; padding: 1.3em; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-align: center;">
-                    <p style="font-size: 1.8em; margin: 0 0 0.4em;">🏆</p>
-                    <p style="margin: 0 0 0.3em;"><strong style="color: #c40d3c;">School Spirit</strong></p>
-                    <p style="margin: 0; font-size: 0.88em; color: #555;">A celebration of everything that makes Valor Leander special — virtue, joy, and community.</p>
+                <!-- Pillar 3 -->
+                <div class="pillar-card">
+                    <p class="pillar-card-icon">🏆</p>
+                    <p class="pillar-card-title"><strong>School Spirit</strong></p>
+                    <p class="pillar-card-text">A celebration of everything that makes Valor Leander special — virtue, joy, and community.</p>
                 </div>
             </div>
 
@@ -111,7 +210,6 @@
 </div>
 
 <footer>
-
     <nav class="quick-links" aria-label="Quick links">
         <ul>
             <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
@@ -122,8 +220,7 @@
             <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
             <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
         </ul>
-</nav>
-
+    </nav>
     <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
 
