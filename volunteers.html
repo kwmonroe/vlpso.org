@@ -27,6 +27,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Grid setup */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 1em;
+        }
+        /* Specific 2-column configuration override */
+        .resource-grid--two-columns {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        /* Individual tile styling */
+        .resource-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.1em 1em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .resource-tile-icon {
+            font-size: 1.8em;
+            margin: 0 0 0.35em;
+            line-height: 1;
+        }
+        .resource-tile h3 {
+            color: #333;
+            margin: 0 0 0.35em;
+            font-size: 0.9em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            line-height: 1.35;
+        }
+        .resource-tile p {
+            font-size: 0.8em;
+            color: #666;
+            margin: 0 0 0.9em;
+            line-height: 1.55;
+        }
+        .resource-tile .tile-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%;
+            margin-top: auto;
+        }
+        .resource-tile .cta-button {
+            font-size: 0.8em;
+            padding: 0.45em 0.8em;
+            text-decoration: none;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 500px) {
+            .resource-grid--two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +99,7 @@
         <h1>Valor Leander Parent Service Organization</h1>
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
         <nav>
-                    <ul>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="family-resources.html">Family Resources</a></li>
@@ -52,67 +114,8 @@
     </div>
     <img src="assets/griffin_logo.png" alt="Valor Leander logo" class="header-logo" />
 </header>
-<style>
-    /* The grid wrapper that forces items into 4 columns if space allows */
-    .resource-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-        gap: 1em;
-    }
-    /* Individual card/tile styles */
-    .resource-tile {
-        border: 1px solid #e7e7e7;
-        border-top: 4px solid #c40d3c;
-        border-radius: 8px;
-        padding: 1.1em 1em;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    /* Icon or Emoji style */
-    .resource-tile-icon {
-        font-size: 1.8em;
-        margin: 0 0 0.35em;
-        line-height: 1;
-    }
-    /* Title inside the tile */
-    .resource-tile h3 {
-        color: #333;
-        margin: 0 0 0.35em;
-        font-size: 0.9em;
-        font-family: 'Libre Baskerville', Georgia, serif;
-        line-height: 1.35;
-    }
-    /* Description paragraph inside the tile */
-    .resource-tile p {
-        font-size: 0.8em;
-        color: #666;
-        margin: 0 0 0.9em;
-        line-height: 1.55;
-    }
-    /* Wrapper ensuring button stays at the bottom of the card */
-    .resource-tile .tile-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-        width: 100%;
-        margin-top: auto;
-    }
-    /* Specific styling for the buttons */
-    .resource-tile .cta-button {
-        font-size: 0.8em;
-        padding: 0.45em 0.8em;
-    }
-    /* Force this specific grid to have exactly 2 columns on larger screens */
-.resource-grid--two-columns {
-    grid-template-columns: repeat(2, 1fr);
-}
- </style>
     
-    <div class="content-wrapper">
+<div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
             <h2>Volunteer at Valor Leander</h2>
@@ -122,46 +125,48 @@
                 Every act of service — big or small — makes a difference for our students and faculty.
             </p>
 
-     <div class="resource-grid--two-columns">
-
+            <!-- Onboarding Actions Grid (2-Column Override) -->
+            <div class="resource-grid resource-grid--two-columns" style="margin-bottom: 2.5em;">
                 <div class="resource-tile">
                     <h3>Become an Approved Volunteer</h3>
-            <p>All volunteers must complete a background check through Raptor Technologies. This is an annual process required by the school and has a $6.00 fee associated with completion. Please follow these instructions to complete the background check (link pending).</p>
-            <a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener" class="cta-button">Complete Volunteer Application</a>
+                    <p>All volunteers must complete a background check through Raptor Technologies. This is an annual process required by the school and has a $6.00 fee associated with completion. Please follow these instructions to complete the background check (link pending).</p>
+                    <div class="tile-buttons">
+                        <a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener" class="cta-button">Complete Volunteer Application</a>
+                    </div>
                 </div>
 
                 <div class="resource-tile">
                     <h3>Tell Us How You'd Like to Help</h3>
-            <p>Let us know where your interests and talents lie. We use this information to match volunteers with opportunities that fit their schedule and strengths.
-            </p>
-            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener" class="cta-button">Fill Out Volunteer Interest Form</a>
+                    <p>Let us know where your interests and talents lie. We use this information to match volunteers with opportunities that fit their schedule and strengths.</p>
+                    <div class="tile-buttons">
+                        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener" class="cta-button">Fill Out Volunteer Interest Form</a>
                     </div>
                 </div>
             </div>
-            
 
-            <div class="content-wrapper">
-    <main class="main-content">
-        <section class="content-box welcome-section">
-            <h3 style="text-align: center;">Volunteer Opportunities</h3>
-
+            <!-- Main Opportunities Segment -->
+            <h3 style="text-align: center; margin-top: 2em;">Volunteer Opportunities</h3>
                
-            <div class="resource-grid">
-
+            <!-- Dynamic 4-Column Responsive Grid -->
+            <div class="resource-grid" style="margin-bottom: 2.5em;">
+                <!-- Athletic Fence Crew Tile -->
                 <div class="resource-tile">
                     <p class="resource-tile-icon">🔨</p>
                     <h3>Athletic Field Fence Crew: Call for Heavy Lifters</h3>
-                    <p>Dates: July 20-24</p>
-                    <p>Times: between 9:00 am - 2:00 pm</p>
-                    <a href="https://www.signupgenius.com/go/10C0A4EADA92BA5FEC16-64673131-athletic" target="_blank"><img src="https://www.signupgenius.com/images/sign-up-now3.gif" width="150" height="90" border="0" alt="Sign Up!"></a>
+                    <p><strong>Dates:</strong> July 20-24</p>
+                    <p><strong>Times:</strong> Between 9:00 am - 2:00 pm</p>
+                    <div class="tile-buttons">
+                        <a href="https://www.signupgenius.com/go/10C0A4EADA92BA5FEC16-64673131-athletic" target="_blank" rel="noopener" class="cta-button">Sign Up on SignUpGenius</a>
+                    </div>
                 </div>
 
+                <!-- Classroom Relocation Tile -->
                 <div class="resource-tile">
                     <p class="resource-tile-icon">📦</p>
                     <h3>Kauffman Loop Classroom Relocation</h3>
-                    <p>If you're interested in helping move items around the Kauffman Loop campus once construction is complete, please sign up below. We'll reach out with the official dates and times as soon as they're confirmed!</p>
+                    <p>If you're interested in helping move items around the Kauffman Loop campus once construction is complete, please sign up below. We'll reach out with official dates and times as soon as they're confirmed!</p>
                     <div class="tile-buttons">
-                        <a href="https://forms.office.com/r/6tiLj2DZ1G" target="_blank" rel="noopener" class="cta-button" style="margin-top: auto;">Sign Up Here!</a>
+                        <a href="https://forms.office.com/r/6tiLj2DZ1G" target="_blank" rel="noopener" class="cta-button">Sign Up Here!</a>
                     </div>
                 </div>
             </div>
@@ -220,13 +225,11 @@
                     <img src="assets/vol-appreciation-2026-8.jpeg" alt="Volunteer Appreciation Celebration welcome screen" style="width: 100%; height: 220px; object-fit: cover; display: block;" />
                 </a>
             </div>
-
         </section>
     </main>
 </div>
 
 <footer>
-
     <nav class="quick-links" aria-label="Quick links">
         <ul>
             <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
@@ -237,8 +240,7 @@
             <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
             <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
         </ul>
-</nav>
-
+    </nav>
     <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
 
