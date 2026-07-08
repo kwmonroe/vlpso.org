@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHDJH4P9P1"></script>  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHDJH4P9P1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];   
     function gtag(){dataLayer.push(arguments);}
@@ -27,6 +27,124 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Welcome Header Typographic Styling */
+        .pso-main-title {
+            text-align: center; 
+            border-bottom: 3px solid #c40d3c; 
+            padding-bottom: 0.5em; 
+            margin-bottom: 0.3em;
+        }
+        .pso-tagline {
+            text-align: center; 
+            font-size: 1em; 
+            letter-spacing: 0.12em; 
+            text-transform: uppercase; 
+            color: #bd9b60; 
+            font-weight: 700; 
+            margin-top: 0; 
+            margin-bottom: 1.8em;
+        }
+
+        /* Mission Statement Hero Box */
+        .mission-banner {
+            background-color: #c40d3c; 
+            border-radius: 8px; 
+            padding: 1.6em 2em; 
+            margin-bottom: 1.8em; 
+            text-align: center; 
+            position: relative;
+        }
+        .mission-label {
+            margin: 0 0 0.4em; 
+            font-size: 1.08em; 
+            letter-spacing: 0.14em; 
+            text-transform: uppercase; 
+            color: #f8d89a; 
+            font-weight: 700;
+        }
+        .mission-text {
+            margin: 0; 
+            font-size: 1.08em; 
+            line-height: 1.75; 
+            color: #ffffff; 
+            font-style: italic;
+        }
+
+        /* Intro & Outro Typographic Blocks */
+        .intro-lead-text {
+            text-align: center; 
+            color: #555555; 
+            font-size: 0.98em; 
+            max-width: 900px; 
+            margin: 0 auto 1.8em;
+        }
+        .outro-closing-text {
+            text-align: center; 
+            color: #666666; 
+            font-size: 0.95em; 
+            border-top: 1px solid #eeeeee; 
+            padding-top: 1.4em; 
+            max-width: 800px; 
+            margin: 0 auto 0;
+        }
+
+        /* Four Pillars Layout Grid System */
+        .pillars-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
+            gap: 0.85em; 
+            margin-bottom: 1.8em;
+        }
+        .pillar-tile {
+            background: #0f1b36; 
+            border: 1px solid #2e4070; 
+            border-top: 3px solid #bd9b60; 
+            border-radius: 6px; 
+            padding: 1em 1.1em;
+        }
+        .pillar-tile-title {
+            margin: 0 0 0.25em; 
+            font-size: 0.78em; 
+            letter-spacing: 0.1em; 
+            text-transform: uppercase; 
+            color: #bd9b60; 
+            font-weight: 700;
+        }
+        .pillar-tile-desc {
+            margin: 0; 
+            font-size: 0.86em; 
+            color: #c8d0e0; 
+            line-height: 1.6;
+        }
+
+        /* Hit Counter Interface */
+        .counter-badge {
+            position: fixed; 
+            bottom: 1.2em; 
+            right: 1.2em; 
+            background: rgba(255, 255, 255, 0.92); 
+            border: 1px solid #e7e7e7; 
+            border-radius: 8px; 
+            padding: 0.45em 0.85em; 
+            font-size: 0.78em; 
+            color: #666; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10); 
+            display: flex; 
+            align-items: center; 
+            gap: 0.4em; 
+            z-index: 999; 
+            backdrop-filter: blur(4px);
+        }
+        .counter-bullet {
+            color: #c40d3c;
+        }
+        .counter-digits {
+            font-weight: 600; 
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +155,7 @@
         <h1 id="top">Valor Leander Parent Service Organization</h1>
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
         <nav>
-                       <ul>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="family-resources.html">Family Resources</a></li>
@@ -54,56 +172,60 @@
 </header>
 
 <div class="content-wrapper">
+    <main class="main-content">
+        <section class="content-box wishlist-intro">
 
-    <div class="content-box wishlist-intro">
+            <!-- Heading Section -->
+            <h2 class="pso-main-title">Valor Leander PSO</h2>
+            <p class="pso-tagline">A Culture of Contribution</p>
 
-        <!-- Header -->
-        <h2 style="text-align: center; border-bottom: 3px solid #c40d3c; padding-bottom: 0.5em; margin-bottom: 0.3em;">Valor Leander PSO</h2>
-        <p style="text-align: center; font-size: 1em; letter-spacing: 0.12em; text-transform: uppercase; color: #bd9b60; font-weight: 700; margin-top: 0; margin-bottom: 1.8em;">A Culture of Contribution</p>
+            <!-- Mission Statement Banner Module -->
+            <div class="mission-banner">
+                <p class="mission-label">Our Mission</p>
+                <p class="mission-text">
+                    Valor's PSO exists to help foster friendship and build community among Valor families through service to our faculty, school, and scholars. 
+                </p>
+            </div>
 
-        <!-- Mission statement banner -->
-        <div style="background-color: #c40d3c; border-radius: 8px; padding: 1.6em 2em; margin-bottom: 1.8em; text-align: center; position: relative;">
-            <p style="margin: 0 0 0.4em; font-size: 1.08em; letter-spacing: 0.14em; text-transform: uppercase; color: #f8d89a; font-weight: 700;">Our Mission</p>
-            <p style="margin: 0; font-size: 1.08em; line-height: 1.75; color: #ffffff; font-style: italic;">
-                Valor's PSO exists to help foster friendship and build community among Valor families through service to our faculty, school, and scholars.  
+            <!-- Intro Lead Text Segment -->
+            <p class="intro-lead-text">
+                Rooted in the belief that parents play a vital role in the formation of each child, we are committed to:
             </p>
-        </div>
 
-        <!-- Intro sentence -->
-        <p style="text-align: center; color: #555555; font-size: 0.98em; max-width: 900px; margin: 0 auto 1.8em;">
-            Rooted in the belief that parents play a vital role in the formation of each child, we are committed to:
-        </p>
+            <!-- Core Value Pillars Framework Layout Grid -->
+            <div class="pillars-grid">
+                <!-- Pillar Card 1 -->
+                <div class="pillar-tile">
+                    <p class="pillar-tile-title">Parent Community</p>
+                    <p class="pillar-tile-desc">Encourage a strong, supportive parent community aligned with Valor's mission.</p>
+                </div>
+                <!-- Pillar Card 2 -->
+                <div class="pillar-tile">
+                    <p class="pillar-tile-title">Faculty Support</p>
+                    <p class="pillar-tile-desc">Assist and uplift faculty through acts of service and heartfelt appreciation.</p>
+                </div>
+                <!-- Pillar Card 3 -->
+                <div class="pillar-tile">
+                    <p class="pillar-tile-title">Student Flourishing</p>
+                    <p class="pillar-tile-desc">Promote student growth by volunteering time, talents, and resources.</p>
+                </div>
+                <!-- Pillar Card 4 -->
+                <div class="pillar-tile">
+                    <p class="pillar-tile-title">School Partnership</p>
+                    <p class="pillar-tile-desc">Partner with school leadership to maintain a culture of virtue, learning, and love.</p>
+                </div>
+            </div>
 
-        <!-- Four pillars grid -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.85em; margin-bottom: 1.8em;">
-            <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 3px solid #bd9b60; border-radius: 6px; padding: 1em 1.1em;">
-                <p style="margin: 0 0 0.25em; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #bd9b60; font-weight: 700;">Parent Community</p>
-                <p style="margin: 0; font-size: 0.86em; color: #c8d0e0; line-height: 1.6;">Encourage a strong, supportive parent community aligned with Valor's mission.</p>
-            </div>
-            <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 3px solid #bd9b60; border-radius: 6px; padding: 1em 1.1em;">
-                <p style="margin: 0 0 0.25em; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #bd9b60; font-weight: 700;">Faculty Support</p>
-                <p style="margin: 0; font-size: 0.86em; color: #c8d0e0; line-height: 1.6;">Assist and uplift faculty through acts of service and heartfelt appreciation.</p>
-            </div>
-            <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 3px solid #bd9b60; border-radius: 6px; padding: 1em 1.1em;">
-                <p style="margin: 0 0 0.25em; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #bd9b60; font-weight: 700;">Student Flourishing</p>
-                <p style="margin: 0; font-size: 0.86em; color: #c8d0e0; line-height: 1.6;">Promote student growth by volunteering time, talents, and resources.</p>
-            </div>
-            <div style="background: #0f1b36; border: 1px solid #2e4070; border-top: 3px solid #bd9b60; border-radius: 6px; padding: 1em 1.1em;">
-                <p style="margin: 0 0 0.25em; font-size: 0.78em; letter-spacing: 0.1em; text-transform: uppercase; color: #bd9b60; font-weight: 700;">School Partnership</p>
-                <p style="margin: 0; font-size: 0.86em; color: #c8d0e0; line-height: 1.6;">Partner with school leadership to maintain a culture of virtue, learning, and love.</p>
-            </div>
-        </div>
+            <!-- Closing Outro Fragment -->
+            <p class="outro-closing-text">
+                Through our shared efforts, we seek to reflect the heart of Valor Leander — building a school culture where families are connected, service is joyful, and every student is surrounded by care and encouragement.
+            </p>
 
-        <!-- Closing statement -->
-        <p style="text-align: center; color: #666666; font-size: 0.95em; border-top: 1px solid #eeeeee; padding-top: 1.4em; max-width: 800px; margin: 0 auto 0;">
-            Through our shared efforts, we seek to reflect the heart of Valor Leander — building a school culture where families are connected, service is joyful, and every student is surrounded by care and encouragement.
-        </p>
-
-    </div>
+        </section>
+    </main>
 </div>
   
 <footer>
-
     <nav class="quick-links" aria-label="Quick links">
         <ul>
             <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
@@ -114,22 +236,24 @@
             <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
             <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
         </ul>
-</nav>
-
+    </nav>
     <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
     
 <script src="assets/main.js"></script>
 
-<!-- Hit counter -->
-<div id="hit-counter" style="position: fixed; bottom: 1.2em; right: 1.2em; background: rgba(255,255,255,0.92); border: 1px solid #e7e7e7; border-radius: 8px; padding: 0.45em 0.85em; font-size: 0.78em; color: #666; box-shadow: 0 2px 8px rgba(0,0,0,0.10); display: flex; align-items: center; gap: 0.4em; z-index: 999; backdrop-filter: blur(4px);">
-  <span style="color: #c40d3c;">●</span> <span id="hit-count" style="font-weight: 600; color: #333;">—</span> <span>visitors</span>
+<!-- Live Analytics Metric Module Badge -->
+<div id="hit-counter" class="counter-badge">
+    <span class="counter-bullet">●</span> 
+    <span id="hit-count" class="counter-digits">—</span> 
+    <span>visitors</span>
 </div>
+
 <script>
-  fetch('https://api.countapi.xyz/hit/vlpso.org/pageviews')
-    .then(r => r.json())
-    .then(d => { document.getElementById('hit-count').textContent = d.value.toLocaleString(); })
-    .catch(() => { document.getElementById('hit-counter').style.display = 'none'; });
+    fetch('https://api.countapi.xyz/hit/vlpso.org/pageviews')
+        .then(r => r.json())
+        .then(d => { document.getElementById('hit-count').textContent = d.value.toLocaleString(); })
+        .catch(() => { document.getElementById('hit-counter').style.display = 'none'; });
 </script>
 </body>
 </html>
