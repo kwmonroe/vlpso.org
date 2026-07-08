@@ -6,27 +6,89 @@
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    gtag('js', new Date());  
     gtag('config', 'G-NHDJH4P9P1');
     </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Support Valor Leander through the PSO. Donate to Faculty Appreciation Week, Stock the Teachers Lounge, classroom celebrations, and more." />
+    <meta name="description" content="Volunteer at Valor Leander! Sign up for current opportunities, get cleared through Raptor Technologies, and support our students and faculty." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://vlpso.org/donations.html" />
+    <link rel="canonical" href="https://vlpso.org/volunteering.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Donations - Valor Leander PSO" />
-    <meta property="og:description" content="Support Valor Leander through the PSO. Donate to Faculty Appreciation Week, Stock the Teachers Lounge, classroom celebrations, and more." />
-    <meta property="og:url" content="https://vlpso.org/donations.html" />
+    <meta property="og:title" content="Volunteering - Valor Leander PSO" />
+    <meta property="og:description" content="Volunteer at Valor Leander! Sign up for current opportunities, get cleared through Raptor Technologies, and support our students and faculty." />
+    <meta property="og:url" content="https://vlpso.org/volunteering.html" />
     <meta property="og:image" content="https://vlpso.org/assets/griffin_logo.png" />
     <meta property="og:site_name" content="Valor Leander PSO" />
-    <title>Donations - Valor Leander PSO</title>
+    <title>Volunteering - Valor Leander PSO</title>
     <link rel="stylesheet" href="assets/style2.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Grid setup */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 1em;
+        }
+        /* Specific 2-column configuration override */
+        .resource-grid--two-columns {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        /* Individual tile styling */
+        .resource-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.1em 1em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .resource-tile-icon {
+            font-size: 1.8em;
+            margin: 0 0 0.35em;
+            line-height: 1;
+        }
+        .resource-tile h3 {
+            color: #333;
+            margin: 0 0 0.35em;
+            font-size: 0.9em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            line-height: 1.35;
+        }
+        .resource-tile p {
+            font-size: 0.8em;
+            color: #666;
+            margin: 0 0 0.9em;
+            line-height: 1.55;
+        }
+        .resource-tile .tile-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%;
+            margin-top: auto;
+        }
+        .resource-tile .cta-button {
+            font-size: 0.8em;
+            padding: 0.45em 0.8em;
+            text-decoration: none;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 500px) {
+            .resource-grid--two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -39,43 +101,65 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About the PSO</a></li>
-                <li><a href="volunteering.html">Volunteering</a></li>
-                <li><a href="newsletters.html">PSO Newsletters</a></li>
-                <li><a href="family-socials.html">Family Socials</a></li>
-                <li><a href="fall-festival.html">Fall Festival 2026</a></li>
-                <li><a href="uniform-swap.html">Uniform Swap</a></li>
-                <li><a href="donations.html">Donations</a></li>
-                <li><a href="faculty-favorites.html">Faculty Favorites</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="family-resources.html">Family Resources</a></li>
-                <li><a href="classes.html">Connecting with Other Families</a></li>
+                <li><a href="volunteers.html">Volunteers</a></li>  
+                <li><a href="classes.html">Family Networking</a></li>
+                <li><a href="family-socials.html">Family Socials</a></li>
+                <li><a href="fall-festival.html">Fall Festival</a></li>
+                <li><a href="faculty-favorites.html">Faculty Favorites</a></li>
+                <li><a href="newsletters.html">PSO Newsletters</a></li>
             </ul>
         </nav>
     </div>
     <img src="assets/griffin_logo.png" alt="Valor Leander logo" class="header-logo" />
 </header>
-
+    
 <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
-            <h2 style="text-align: center;">Donations</h2>
 
-            <div style="max-width: 580px; margin: 1em auto 0; background: #f9f5f0; border: 1px solid #e0d0b0; border-left: 5px solid #bd9b60; border-radius: 8px; padding: 1.8em 2em; text-align: center;">
-                <p style="font-size: 0.8em; letter-spacing: 0.12em; text-transform: uppercase; color: #bd9b60; font-weight: 700; margin: 0 0 0.5em;">Notice</p>
-                <p style="font-size: 1.05em; color: #333; font-family: 'Libre Baskerville', Georgia, serif; margin: 0 0 0.8em; line-height: 1.6;">Donations for the 2025–2026 school year are now closed.</p>
-                <p style="font-size: 0.93em; color: #555; line-height: 1.7; margin: 0 0 1.2em;">Donation opportunities will re-open in mid-summer prior to the 2026–2027 school year. We are grateful for the generous support our community has shown throughout this year.</p>
-                <p style="font-size: 0.93em; color: #555; line-height: 1.7; margin: 0 0 1.2em;">If you have any questions or concerns, please don't hesitate to reach out to your PSO.</p>
-                <a href="mailto:pso.leander@valoreducation.org" style="display: inline-flex; align-items: center; gap: 0.45em; font-size: 0.9em; color: #c40d3c; font-weight: 700; text-decoration: none; border-bottom: 1px solid #c40d3c; padding-bottom: 0.1em;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-                    pso.leander@valoreducation.org
-                </a>
+            <!-- Main Opportunities Segment -->
+            <h3 style="text-align: center; margin-top: 2em;">Volunteer Opportunities</h3>
+               
+            <!-- Dynamic 4-Column Responsive Grid -->
+            <div class="resource-grid" style="margin-bottom: 2.5em;">
+                <!-- Athletic Fence Crew Tile -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">🔨</p>
+                    <h3>Athletic Field Fence Crew: Call for Heavy Lifters</h3>
+                    <p><strong>Dates:</strong> July 20-24</p>
+                    <p><strong>Times:</strong> Between 9:00 am - 2:00 pm</p>
+                    <div class="tile-buttons">
+                        <a href="https://www.signupgenius.com/go/10C0A4EADA92BA5FEC16-64673131-athletic" target="_blank" rel="noopener" class="cta-button">Sign Up on SignUpGenius</a>
+                    </div>
+                </div>
+
+                <!-- Classroom Relocation Tile -->
+                <div class="resource-tile">
+                    <p class="resource-tile-icon">📦</p>
+                    <h3>Kauffman Loop Classroom Relocation</h3>
+                    <p>If you're interested in helping move items around the Kauffman Loop campus once construction is complete, please sign up below. We'll reach out with official dates and times as soon as they're confirmed!</p>
+                    <div class="tile-buttons">
+                        <a href="https://forms.office.com/r/6tiLj2DZ1G" target="_blank" rel="noopener" class="cta-button">Sign Up Here!</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-</div>
+
 
 <footer>
-    <p>&copy; 2026 Valor Leander PSO</p>
+    <nav class="quick-links" aria-label="Quick links">
+        <ul>
+            <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
+            <li><a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener">Volunteer Background Check</a></li>
+            <li><a href="https://login.jupitered.com/login/?mc_cid=d80cde37a4&mc_eid=50836b3a15" target="_blank" rel="noopener">Jupiter</a></li>
+            <li><a href="https://valoreducation.schoolaxis.com/?mc_cid=d80cde37a4&mc_eid=50836b3a15" target="_blank" rel="noopener">SchoolAxis</a></li>
+            <li><a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener">PSO Facebook</a></li>
+            <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
+            <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
+        </ul>
+    </nav>
+    <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
 
 <script src="assets/main.js"></script>
