@@ -52,7 +52,61 @@
     </div>
     <img src="assets/griffin_logo.png" alt="Valor Leander logo" class="header-logo" />
 </header>
-
+<style>
+    /* The grid wrapper that forces items into 4 columns if space allows */
+    .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 1em;
+    }
+    /* Individual card/tile styles */
+    .resource-tile {
+        border: 1px solid #e7e7e7;
+        border-top: 4px solid #c40d3c;
+        border-radius: 8px;
+        padding: 1.1em 1em;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* Icon or Emoji style */
+    .resource-tile-icon {
+        font-size: 1.8em;
+        margin: 0 0 0.35em;
+        line-height: 1;
+    }
+    /* Title inside the tile */
+    .resource-tile h3 {
+        color: #333;
+        margin: 0 0 0.35em;
+        font-size: 0.9em;
+        font-family: 'Libre Baskerville', Georgia, serif;
+        line-height: 1.35;
+    }
+    /* Description paragraph inside the tile */
+    .resource-tile p {
+        font-size: 0.8em;
+        color: #666;
+        margin: 0 0 0.9em;
+        line-height: 1.55;
+    }
+    /* Wrapper ensuring button stays at the bottom of the card */
+    .resource-tile .tile-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+        margin-top: auto;
+    }
+    /* Specific styling for the buttons */
+    .resource-tile .cta-button {
+        font-size: 0.8em;
+        padding: 0.45em 0.8em;
+    }
+</style>
 <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
@@ -75,11 +129,12 @@
             </p>
             <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener" class="cta-button">Fill Out Volunteer Interest Form</a>
 
-            <--- ===== SECTION 1 ===== -->
+<div class="content-wrapper">
+    <main class="main-content">
+        <section class="content-box welcome-section">
+                        <div style="background: #1a2744; border: 2px solid #bd9b60; border-radius: 10px; padding: 1.4em 1.6em; margin: 1.2em 0 1.8em; text-align: center;">
+            <h2 style="text-align: center;">Volunteer Opportunities</h2>
 
-              <h3 style="text-align: center;">Volunteer Opportunities</h3>
-
-            <div style="background: #1a2744; border: 2px solid #bd9b60; border-radius: 10px; padding: 1.4em 1.6em; margin: 1.2em 0 1.8em; text-align: center;">
                
             <div class="resource-grid">
 
