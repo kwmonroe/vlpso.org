@@ -106,8 +106,20 @@
         font-size: 0.8em;
         padding: 0.45em 0.8em;
     }
-</style>
-<div class="content-wrapper">
+    /* Force this specific grid to have exactly 2 columns on larger screens */
+.resource-grid--two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Optional: On small mobile screens, drop down to 1 column so it doesn't get squished */
+@media (max-width: 500px) {
+    .resource-grid--two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+ </style>
+    
+    <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
             <h2>Volunteer at Valor Leander</h2>
@@ -117,19 +129,25 @@
                 Every act of service — big or small — makes a difference for our students and faculty.
             </p>
 
-            <h3>Become an Approved Volunteer</h3>
-            <p>
-                All volunteers must complete a background check through Raptor Technologies. This is an annual process required by the school and has a $6.00 fee associated with completion. Please follow these instructions to complete the background check (link pending).
-            </p>
-            <a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener" class="cta-button">Complete Volunteer Application</a>
+     <div class="resource-grid--two-columns">
 
-            <h3>Tell Us How You'd Like to Help</h3>
-            <p>
-                Let us know where your interests and talents lie. We use this information to match volunteers with opportunities that fit their schedule and strengths.
+                <div class="resource-tile">
+                    <h3>Become an Approved Volunteer</h3>
+            <p>All volunteers must complete a background check through Raptor Technologies. This is an annual process required by the school and has a $6.00 fee associated with completion. Please follow these instructions to complete the background check (link pending).</p>
+            <a href="https://apps.raptortech.com/Apply/NTM0MDplbi1VUw==" target="_blank" rel="noopener" class="cta-button">Complete Volunteer Application</a>
+                </div>
+
+                <div class="resource-tile">
+                    <h3>Tell Us How You'd Like to Help</h3>
+            <p>Let us know where your interests and talents lie. We use this information to match volunteers with opportunities that fit their schedule and strengths.
             </p>
             <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener" class="cta-button">Fill Out Volunteer Interest Form</a>
+                    </div>
+                </div>
+            </div>
+            
 
-<div class="content-wrapper">
+            <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
             <h3 style="text-align: center;">Volunteer Opportunities</h3>
