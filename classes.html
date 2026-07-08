@@ -29,72 +29,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
 
     <style>
-        /* Logo Badge Matrix Layout */
-        .logo-grid {
+        /* Main Responsive Networking Grid Setup */
+        .networking-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
             gap: 1.2em;
-            margin: 1.5em 0 2.5em;
-            justify-items: center;
-        }
-        .logo-grid a {
-            display: block;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border-radius: 8px;
-        }
-        .logo-grid a:hover {
-            transform: translateY(-3px);
-        }
-        .logo-grid img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
+            margin-top: 1.5em;
         }
 
-        /* Bottom Channels Segment */
-        .networking-channels {
-            margin-top: 2em;
+        /* Class Badge Cards */
+        .class-badge-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #bd9b60; /* Elegant Gold Top-Border for class badges */
+            border-radius: 8px;
+            padding: 1.1em 1em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            gap: 1.2em;
-            flex-wrap: wrap;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
         }
+        .class-badge-tile:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+        .class-badge-tile img {
+            max-width: 110px;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+        }
+
+        /* Core Communication Channel Cards (Facebook & GroupMe) */
         .channel-tile {
             border: 1px solid #e7e7e7;
-            border-top: 4px solid #c40d3c;
+            border-top: 4px solid #c40d3c; /* Crimson Red Top-Border for main channels */
             border-radius: 8px;
-            padding: 1.6em 1.8em;
+            padding: 1.4em 1.2em;
             background: #fff;
             box-shadow: 0 2px 8px rgba(0,0,0,0.07);
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            max-width: 360px;
-            width: 100%;
         }
         .channel-tile-icon {
             font-size: 2em;
-            margin: 0 0 0.4em;
+            margin: 0 0 0.3em;
             line-height: 1;
         }
         .channel-tile h3 {
             color: #333;
-            margin: 0 0 0.5em;
+            margin: 0 0 0.4em;
             font-size: 1.05em;
             font-family: 'Libre Baskerville', Georgia, serif;
+            line-height: 1.35;
         }
         .channel-tile p {
-            font-size: 0.88em;
+            font-size: 0.84em;
             color: #666;
             margin: 0 0 1.2em;
-            line-height: 1.65;
+            line-height: 1.6;
             flex: 1;
         }
         .channel-tile .cta-button {
             text-decoration: none;
             margin-top: auto;
+            width: 100%;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -125,69 +132,93 @@
 
 <div class="content-wrapper">
     <main class="main-content">
-        <div class="content-box wishlist-intro">
-            <h2>Connecting with Families</h2>
-            <p>Connect with other families in your child's graduating class via Facebook, and browse the Valor Leander Family Business Directory to support our community.</p>
-        </div>
+        <div class="content-box welcome-section">
+            <h2 style="text-align: center;">Connecting with Families</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 1.6em;">
+                Connect with other families in your child's graduating class via Facebook, and browse the main PSO organizational networking channels below to stay connected with our community.
+            </p>
 
-        <!-- Class Facebook Pages Matrix Grid -->
-        <div class="logo-grid">
-            <a href="https://www.facebook.com/groups/1665592580579433/" target="_blank" rel="noopener">
-                <img src="assets/28.png" alt="Class of 2028 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/3518334528451196/" target="_blank" rel="noopener">
-                <img src="assets/29.png" alt="Class of 2029 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/1203241301076280/" target="_blank" rel="noopener">
-                <img src="assets/30.png" alt="Class of 2030 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/240086295423683/" target="_blank" rel="noopener">
-                <img src="assets/31.png" alt="Class of 2031 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/1205042560158246/" target="_blank" rel="noopener">
-                <img src="assets/32.png" alt="Class of 2032 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/650953463114502/" target="_blank" rel="noopener">
-                <img src="assets/33.png" alt="Class of 2033 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/572694374945807/" target="_blank" rel="noopener">
-                <img src="assets/34.png" alt="Class of 2034 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/280526797829126/" target="_blank" rel="noopener">
-                <img src="assets/35.png" alt="Class of 2035 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/229402319855424/" target="_blank" rel="noopener">
-                <img src="assets/36.png" alt="Class of 2036 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/776008664618695/" target="_blank" rel="noopener">
-                <img src="assets/37.png" alt="Class of 2037 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/groups/749645384282746/" target="_blank" rel="noopener">
-                <img src="assets/38.png" alt="Class of 2038 Facebook Group" />
-            </a>
-            <a href="https://www.facebook.com/share/g/17gXufXjX2/?mibextid=wwXIfr" target="_blank" rel="noopener">
-                <img src="assets/39.png" alt="Class of 2039 Facebook Group" />
-            </a>
-        </div>
+            <!-- Unified Family Networking Grid Layout -->
+            <div class="networking-grid">
 
-        <!-- Central Organization Communication Modals -->
-        <div class="networking-channels">
-            <!-- Facebook Group Tile -->
-            <div class="channel-tile">
-                <p class="channel-tile-icon">👥</p>
-                <h3>PSO Facebook Group</h3>
-                <p>Stay up to date on PSO announcements, volunteer opportunities, school news, and community events.</p>
-                <a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener" class="cta-button">Join Facebook Group</a>
-            </div>
+                <!-- Class of 2028 -->
+                <a href="https://www.facebook.com/groups/1665592580579433/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/28.png" alt="Class of 2028 Facebook Group" />
+                </a>
 
-            <!-- GroupMe Tile -->
-            <div class="channel-tile">
-                <p class="channel-tile-icon">💬</p>
-                <h3>GroupMe</h3>
-                <p>Join the PSO GroupMe for quick updates, reminders, and community communication on the go.</p>
-                <a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener" class="cta-button">Join GroupMe</a>
-            </div>
-        </div>
+                <!-- Class of 2029 -->
+                <a href="https://www.facebook.com/groups/3518334528451196/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/29.png" alt="Class of 2029 Facebook Group" />
+                </a>
+
+                <!-- Class of 2030 -->
+                <a href="https://www.facebook.com/groups/1203241301076280/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/30.png" alt="Class of 2030 Facebook Group" />
+                </a>
+
+                <!-- Class of 2031 -->
+                <a href="https://www.facebook.com/groups/240086295423683/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/31.png" alt="Class of 2031 Facebook Group" />
+                </a>
+
+                <!-- Class of 2032 -->
+                <a href="https://www.facebook.com/groups/1205042560158246/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/32.png" alt="Class of 2032 Facebook Group" />
+                </a>
+
+                <!-- Class of 2033 -->
+                <a href="https://www.facebook.com/groups/650953463114502/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/33.png" alt="Class of 2033 Facebook Group" />
+                </a>
+
+                <!-- Class of 2034 -->
+                <a href="https://www.facebook.com/groups/572694374945807/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/34.png" alt="Class of 2034 Facebook Group" />
+                </a>
+
+                <!-- Class of 2035 -->
+                <a href="https://www.facebook.com/groups/280526797829126/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/35.png" alt="Class of 2035 Facebook Group" />
+                </a>
+
+                <!-- Class of 2036 -->
+                <a href="https://www.facebook.com/groups/229402319855424/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/36.png" alt="Class of 2036 Facebook Group" />
+                </a>
+
+                <!-- Class of 2037 -->
+                <a href="https://www.facebook.com/groups/776008664618695/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/37.png" alt="Class of 2037 Facebook Group" />
+                </a>
+
+                <!-- Class of 2038 -->
+                <a href="https://www.facebook.com/groups/749645384282746/" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/38.png" alt="Class of 2038 Facebook Group" />
+                </a>
+
+                <!-- Class of 2039 -->
+                <a href="https://www.facebook.com/share/g/17gXufXjX2/?mibextid=wwXIfr" target="_blank" rel="noopener" class="class-badge-tile">
+                    <img src="assets/39.png" alt="Class of 2039 Facebook Group" />
+                </a>
+
+                <!-- PSO Main Organizational Facebook Tile -->
+                <div class="channel-tile">
+                    <p class="channel-tile-icon">👥</p>
+                    <h3>PSO Facebook Group</h3>
+                    <p>Stay up to date on main school updates, volunteer needs, updates from co-chairs, and general events.</p>
+                    <a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener" class="cta-button">Join Facebook Group</a>
+                </div>
+
+                <!-- PSO Main Organizational GroupMe Tile -->
+                <div class="channel-tile">
+                    <p class="channel-tile-icon">💬</p>
+                    <h3>GroupMe</h3>
+                    <p>Join the open PSO GroupMe room for instant layout updates, quick notifications, and messaging on the go.</p>
+                    <a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener" class="cta-button">Join GroupMe</a>
+                </div>
+
+            </div> <!-- End networking-grid -->
+        </div> <!-- End content-box -->
     </main>
 </div>
 
