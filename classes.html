@@ -27,6 +27,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Logo Badge Matrix Layout */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1.2em;
+            margin: 1.5em 0 2.5em;
+            justify-items: center;
+        }
+        .logo-grid a {
+            display: block;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 8px;
+        }
+        .logo-grid a:hover {
+            transform: translateY(-3px);
+        }
+        .logo-grid img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Bottom Channels Segment */
+        .networking-channels {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+            gap: 1.2em;
+            flex-wrap: wrap;
+        }
+        .channel-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.6em 1.8em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 360px;
+            width: 100%;
+        }
+        .channel-tile-icon {
+            font-size: 2em;
+            margin: 0 0 0.4em;
+            line-height: 1;
+        }
+        .channel-tile h3 {
+            color: #333;
+            margin: 0 0 0.5em;
+            font-size: 1.05em;
+            font-family: 'Libre Baskerville', Georgia, serif;
+        }
+        .channel-tile p {
+            font-size: 0.88em;
+            color: #666;
+            margin: 0 0 1.2em;
+            line-height: 1.65;
+            flex: 1;
+        }
+        .channel-tile .cta-button {
+            text-decoration: none;
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +107,7 @@
         <h1>Valor Leander Parent Service Organization</h1>
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
         <nav>
-           <ul>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="family-resources.html">Family Resources</a></li>
@@ -54,107 +124,74 @@
 </header>
 
 <div class="content-wrapper">
-    <div class="content-box wishlist-intro">
-        <h2>Connecting with Families</h2>
-        <p>Connect with other families in your child's graduating class via Facebook, and browse the Valor Leander Family Business Directory to support our community.</p>
-    </div>
+    <main class="main-content">
+        <div class="content-box wishlist-intro">
+            <h2>Connecting with Families</h2>
+            <p>Connect with other families in your child's graduating class via Facebook, and browse the Valor Leander Family Business Directory to support our community.</p>
+        </div>
 
-    <div class="logo-grid">
+        <!-- Class Facebook Pages Matrix Grid -->
+        <div class="logo-grid">
+            <a href="https://www.facebook.com/groups/1665592580579433/" target="_blank" rel="noopener">
+                <img src="assets/28.png" alt="Class of 2028 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/3518334528451196/" target="_blank" rel="noopener">
+                <img src="assets/29.png" alt="Class of 2029 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/1203241301076280/" target="_blank" rel="noopener">
+                <img src="assets/30.png" alt="Class of 2030 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/240086295423683/" target="_blank" rel="noopener">
+                <img src="assets/31.png" alt="Class of 2031 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/1205042560158246/" target="_blank" rel="noopener">
+                <img src="assets/32.png" alt="Class of 2032 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/650953463114502/" target="_blank" rel="noopener">
+                <img src="assets/33.png" alt="Class of 2033 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/572694374945807/" target="_blank" rel="noopener">
+                <img src="assets/34.png" alt="Class of 2034 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/280526797829126/" target="_blank" rel="noopener">
+                <img src="assets/35.png" alt="Class of 2035 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/229402319855424/" target="_blank" rel="noopener">
+                <img src="assets/36.png" alt="Class of 2036 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/776008664618695/" target="_blank" rel="noopener">
+                <img src="assets/37.png" alt="Class of 2037 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/groups/749645384282746/" target="_blank" rel="noopener">
+                <img src="assets/38.png" alt="Class of 2038 Facebook Group" />
+            </a>
+            <a href="https://www.facebook.com/share/g/17gXufXjX2/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                <img src="assets/39.png" alt="Class of 2039 Facebook Group" />
+            </a>
+        </div>
 
-        <a href="https://www.facebook.com/groups/1665592580579433/" target="_blank" rel="noopener">
-            <img src="assets/28.png" alt="Class of 2028 Facebook Group" />
-        </a>
+        <!-- Central Organization Communication Modals -->
+        <div class="networking-channels">
+            <!-- Facebook Group Tile -->
+            <div class="channel-tile">
+                <p class="channel-tile-icon">👥</p>
+                <h3>PSO Facebook Group</h3>
+                <p>Stay up to date on PSO announcements, volunteer opportunities, school news, and community events.</p>
+                <a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener" class="cta-button">Join Facebook Group</a>
+            </div>
 
-        <a href="https://www.facebook.com/groups/3518334528451196/" target="_blank" rel="noopener">
-            <img src="assets/29.png" alt="Class of 2029 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/1203241301076280/" target="_blank" rel="noopener">
-            <img src="assets/30.png" alt="Class of 2030 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/240086295423683/" target="_blank" rel="noopener">
-            <img src="assets/31.png" alt="Class of 2031 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/1205042560158246/" target="_blank" rel="noopener">
-            <img src="assets/32.png" alt="Class of 2032 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/650953463114502/" target="_blank" rel="noopener">
-            <img src="assets/33.png" alt="Class of 2033 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/572694374945807/" target="_blank" rel="noopener">
-            <img src="assets/34.png" alt="Class of 2034 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/280526797829126/" target="_blank" rel="noopener">
-            <img src="assets/35.png" alt="Class of 2035 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/229402319855424/" target="_blank" rel="noopener">
-            <img src="assets/36.png" alt="Class of 2036 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/776008664618695/" target="_blank" rel="noopener">
-            <img src="assets/37.png" alt="Class of 2037 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/groups/749645384282746/" target="_blank" rel="noopener">
-            <img src="assets/38.png" alt="Class of 2038 Facebook Group" />
-        </a>
-
-        <a href="https://www.facebook.com/share/g/17gXufXjX2/?mibextid=wwXIfr" target="_blank" rel="noopener">
-            <img src="assets/39.png" alt="Class of 2039 Facebook Group" />
-        </a>
-
-    </div>
-
-   <div style="margin-top: 1.6em; display: flex; justify-content: center; gap: 1.2em; flex-wrap: wrap;">
-
-    <!-- Facebook Group -->
-    <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.6em 1.8em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 360px; width: 100%;">
-
-        <p style="font-size: 2em; margin: 0 0 0.4em; line-height: 1;">👥</p>
-
-        <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">
-            PSO Facebook Group
-        </h3>
-
-        <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">
-            Stay up to date on PSO announcements, volunteer opportunities, school news, and community events.
-        </p>
-
-        <a href="https://www.facebook.com/groups/valorleanderpso/" target="_blank" rel="noopener" class="cta-button">
-            Join Facebook Group
-        </a>
-    </div>
-
-    <!-- GroupMe -->
-    <div style="border: 1px solid #e7e7e7; border-top: 4px solid #c40d3c; border-radius: 8px; padding: 1.6em 1.8em; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.07); display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 360px; width: 100%;">
-
-        <p style="font-size: 2em; margin: 0 0 0.4em; line-height: 1;">💬</p>
-
-        <h3 style="color: #333; margin: 0 0 0.5em; font-size: 1.05em; font-family: 'Libre Baskerville', Georgia, serif;">
-            GroupMe
-        </h3>
-
-        <p style="font-size: 0.88em; color: #666; margin: 0 0 1.2em; line-height: 1.65;">
-            Join the PSO GroupMe for quick updates, reminders, and community communication on the go.
-        </p>
-
-        <a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener" class="cta-button">
-            Join GroupMe
-        </a>
-    </div>
-
-</div>
-    </div>
+            <!-- GroupMe Tile -->
+            <div class="channel-tile">
+                <p class="channel-tile-icon">💬</p>
+                <h3>GroupMe</h3>
+                <p>Join the PSO GroupMe for quick updates, reminders, and community communication on the go.</p>
+                <a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener" class="cta-button">Join GroupMe</a>
+            </div>
+        </div>
+    </main>
 </div>
 
 <footer>
-
     <nav class="quick-links" aria-label="Quick links">
         <ul>
             <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
@@ -165,8 +202,7 @@
             <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
             <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
         </ul>
-</nav>
-
+    </nav>
     <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
 
