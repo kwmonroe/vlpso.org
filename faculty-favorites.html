@@ -27,6 +27,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Hero text settings */
+        .page-intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 1.8em;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Coming Soon Informational Callout Container */
+        .announcement-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #f9f5f0;
+            border: 1px solid #e0d0b0;
+            border-left: 5px solid #bd9b60;
+            border-radius: 8px;
+            padding: 1.8em 2em;
+            text-align: center;
+        }
+        .announcement-badge {
+            font-size: 0.8em;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #bd9b60;
+            font-weight: 700;
+            margin: 0 0 0.5em;
+        }
+        .announcement-title {
+            font-size: 1.05em;
+            color: #333;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            margin: 0 0 0.8em;
+            line-height: 1.6;
+        }
+        .announcement-body {
+            font-size: 0.93em;
+            color: #555;
+            line-height: 1.75;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +81,7 @@
         <h1>Valor Leander Parent Service Organization</h1>
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
         <nav>
-       <ul>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="family-resources.html">Family Resources</a></li>
@@ -58,14 +102,15 @@
         <section class="content-box welcome-section">
 
             <h2 style="text-align: center;">Faculty Favorites</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 1.8em; font-size: 1em; color: #555;">
+            <p class="page-intro-text">
                 Show our incredible Valor Leander faculty how much they are valued. Browse their favorites, wish lists, and classroom needs — every thoughtful gesture makes a lasting difference.
             </p>
 
-            <div style="max-width: 800px; margin: 0 auto; background: #f9f5f0; border: 1px solid #e0d0b0; border-left: 5px solid #bd9b60; border-radius: 8px; padding: 1.8em 2em; text-align: center;">
-                <p style="font-size: 0.8em; letter-spacing: 0.12em; text-transform: uppercase; color: #bd9b60; font-weight: 700; margin: 0 0 0.5em;">Coming Soon</p>
-                <p style="font-size: 1.05em; color: #333; font-family: 'Libre Baskerville', Georgia, serif; margin: 0 0 0.8em; line-height: 1.6;">We are so excited for the 2026–2027 school year!</p>
-                <p style="font-size: 0.93em; color: #555; line-height: 1.75; margin: 0;">
+            <!-- Status Announcement Module -->
+            <div class="announcement-card">
+                <p class="announcement-badge">Coming Soon</p>
+                <p class="announcement-title">We are so excited for the 2026–2027 school year!</p>
+                <p class="announcement-body">
                     We look forward to welcoming both our returning faculty and any new members joining the Valor Leander community. The Faculty Favorites list will be updated as we head into the new school year — check back this summer for each teacher's wish list, favorite items, and classroom needs.
                 </p>
             </div>
@@ -75,7 +120,6 @@
 </div>
 
 <footer>
-
     <nav class="quick-links" aria-label="Quick links">
         <ul>
             <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
@@ -86,8 +130,7 @@
             <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
             <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
         </ul>
-</nav>
-
+    </nav>
     <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
 
