@@ -27,6 +27,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <style>
+        /* Responsive Newsletter Archival Grid Layout */
+        .newsletter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1.2em;
+            margin-top: 1.5em;
+        }
+
+        /* Actionable Newsletter Document Card Tiles */
+        .newsletter-tile {
+            border: 1px solid #e7e7e7;
+            border-top: 4px solid #c40d3c;
+            border-radius: 8px;
+            padding: 1.1em 1em;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .newsletter-tile:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        /* Newsletter Preview Graphical Element */
+        .tile-thumb {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 0.8em;
+            display: block;
+        }
+
+        /* Calendar Title Element */
+        .tile-month {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: #333;
+            font-family: 'Libre Baskerville', Georgia, serif;
+            line-height: 1.35;
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +87,7 @@
         <h1>Valor Leander Parent Service Organization</h1>
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
         <nav>
-                <ul>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="family-resources.html">Family Resources</a></li>
@@ -56,62 +106,73 @@
 <div class="content-wrapper">
     <main class="main-content">
         <section class="content-box welcome-section">
-            <h2>PSO Newsletters</h2>
-            <p>
+            <h2 style="text-align: center;">PSO Newsletters</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2em; color: #555; line-height: 1.65;">
                 Stay informed about everything happening at Valor Leander. Our newsletters cover
                 upcoming events, volunteer opportunities, school news, and PSO updates throughout
                 the school year.
             </p>
 
-            <h3>2025–2026 School Year</h3>
+            <h3 style="margin-top: 1.8em; font-family: 'Libre Baskerville', Georgia, serif;">2025–2026 School Year</h3>
 
+            <!-- Grid Structure Segment -->
             <div class="newsletter-grid">
 
+                <!-- May 2026 -->
                 <a href="assets/newsletters/may-2026.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/may-2026.png" alt="May 2026 Newsletter" class="tile-thumb" />
                     <div class="tile-month">May 2026</div>
                 </a>
 
+                <!-- April 2026 -->
                 <a href="assets/newsletters/april-2026.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/april-2026.png" alt="April 2026 Newsletter" class="tile-thumb" />
                     <div class="tile-month">April 2026</div>
                 </a>
 
+                <!-- March 2026 -->
                 <a href="assets/newsletters/march-2026.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/march-2026.png" alt="March 2026 Newsletter" class="tile-thumb" />
                     <div class="tile-month">March 2026</div>
                 </a>
 
+                <!-- February 2026 -->
                 <a href="assets/newsletters/february-2026.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/february-2026.png" alt="February 2026 Newsletter" class="tile-thumb" />
                     <div class="tile-month">February 2026</div>
                 </a>
 
+                <!-- January 2026 -->
                 <a href="assets/newsletters/january-2026.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/january-2026.png" alt="January 2026 Newsletter" class="tile-thumb" />
                     <div class="tile-month">January 2026</div>
                 </a>
 
+                <!-- December 2025 -->
                 <a href="assets/newsletters/december-2025.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/december-2025.png" alt="December 2025 Newsletter" class="tile-thumb" />
                     <div class="tile-month">December 2025</div>
                 </a>
 
+                <!-- November 2025 -->
                 <a href="assets/newsletters/november-2025.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/november-2025.png" alt="November 2025 Newsletter" class="tile-thumb" />
                     <div class="tile-month">November 2025</div>
                 </a>
 
+                <!-- October 2025 -->
                 <a href="assets/newsletters/october-2025.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/october-2025.png" alt="October 2025 Newsletter" class="tile-thumb" />
                     <div class="tile-month">October 2025</div>
                 </a>
 
+                <!-- September 2025 -->
                 <a href="assets/newsletters/september-2025.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/september-2025.png" alt="September 2025 Newsletter" class="tile-thumb" />
                     <div class="tile-month">September 2025</div>
                 </a>
 
+                <!-- August 2025 -->
                 <a href="assets/newsletters/august-2025.pdf" target="_blank" rel="noopener" class="newsletter-tile">
                     <img src="assets/newsletter-thumbs/august-2025.png" alt="August 2025 Newsletter" class="tile-thumb" />
                     <div class="tile-month">August 2025</div>
@@ -123,7 +184,6 @@
 </div>
 
 <footer>
-
     <nav class="quick-links" aria-label="Quick links">
         <ul>
             <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vcRwxcMGe0CmlJQa-0C3779MJmRf8gVLtiUApH3aT7tUQUpWVzNETEFOUFdQRVcyQzRDMFkxV0FUMC4u" target="_blank" rel="noopener">Volunteer Interest Form</a></li>
@@ -134,8 +194,7 @@
             <li><a href="https://groupme.com/join_group/102478785/eDCoHvI8" target="_blank" rel="noopener">PSO GroupMe</a></li>
             <li><a href="https://www.valoreducation.org/leander" target="_blank" rel="noopener">VL Current Families</a></li>
         </ul>
-</nav>
-
+    </nav>
     <p style="display: block; margin-top: 20px;">&copy; 2026 Valor Leander PSO</p>
 </footer>
 
