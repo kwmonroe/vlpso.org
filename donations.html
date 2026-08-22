@@ -80,6 +80,28 @@
             padding: 0.45em 0.8em;
             text-decoration: none;
         }
+        /* Style for event links inside grid */
+        .event-card {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            font-family: sans-serif;
+            background: #fff;
+            border: 1px solid #e7e7e7;
+            border-radius: 8px;
+            padding: 1em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .event-card img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 500px) {
             .resource-grid--two-columns {
@@ -131,90 +153,55 @@
                 <div class="resource-tile">
                     <h3>Making Connections!</h3>
                     <p>Our Core Goal: Community Building! While raising funds is wonderful, the main objective of these events is to promote community building. This is a great way to meet with parents from your classroom and even with teachers or school leadership! Come out, share a meal, and strengthen our school family.</p>
-      </div>
+                </div>
 
-                    <div class="resource-tile">
+                <div class="resource-tile">
                     <h3>How It Works!</h3>
-<p style="text-align: left;">1. DINE OUT: visit our designated partner restaurant on the scheduled date with your family and friends</p>  
-<p style="text-align: left;">2. MENTION US: tell the cashier you are supporting Valor Leander so your bill is added to our total</p>  
-<p style="text-align: left;">3. ENTER THE RAFFLE: grab a photo of your family at the restaurant or a snapshot of your receipt</p>                    
-                    </div>
+                    <p style="text-align: left;">1. DINE OUT: visit our designated partner restaurant on the scheduled date with your family and friends</p>  
+                    <p style="text-align: left;">2. MENTION US: tell the cashier you are supporting Valor Leander so your bill is added to our total</p>  
+                    <p style="text-align: left;">3. ENTER THE RAFFLE: grab a photo of your family at the restaurant or a snapshot of your receipt</p>                    
+                </div>
 
-                          <div class="resource-tile">
+                <div class="resource-tile">
                     <h3>Earn Raffle Entries at Every Spirit Night! 🎟️</h3>
                     <p>Each Spirit Night you attend gives you an extra entry into our End-of-Year Raffle! To claim your entry, simply fill out the form below with your name, email, and the Spirit Night location. Be sure to upload either a photo of your family enjoying the event or a snapshot of your receipt as proof of attendance. The more events you attend, the higher your chances of winning!</p>
                     <div class="tile-buttons">
                         <a href="https://forms.cloud.microsoft/r/kuVhcn5850" target="_blank" rel="noopener" class="cta-button">Fill Out Raffle Entry</a>
                     </div>
-                              
                 </div>
             </div>
 
-<div class="content-wrapper">
-    <main class="main-content">
             <!-- Main Opportunities Segment -->
             <h3 style="text-align: center; margin-top: 2em;">Spirit Night Events</h3>
-               
-            <!-- Dynamic 4-Column Responsive Grid -->
+                
+            <!-- Dynamic Grid for Restaurant Events -->
             <div class="resource-grid" style="margin-bottom: 2.5em;">
-<!-- Smokey Mo's Leander Event Link -->
-<a href="https://www.facebook.com/share/1dKuywo57j/" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-block; text-align: center; text-decoration: none; color: inherit; font-family: sans-serif;">
-  
-  <img src="assets/comboplate-sides.webp" 
-       alt="Smokey Mo's Leander" 
-       style="width: 250px; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+                <!-- Smokey Mo's Leander Event Link -->
+                <a href="https://www.facebook.com/share/1dKuywo57j/" target="_blank" rel="noopener noreferrer" class="event-card">
+                    <img src="assets/comboplate-sides.webp" alt="Smokey Mo's Leander">
+                    <div style="margin-top: 10px;">
+                        <span style="display: block; font-weight: bold; font-size: 18px; color: #111111;">Smokey Mo's Leander</span>
+                        <span style="display: block; font-size: 15px; color: #555555; margin-top: 4px;">August 25</span>
+                    </div>
+                </a>
 
-  <!-- Text Section -->
-  <div style="margin-top: 10px;">
-    <span style="display: block; font-weight: bold; font-size: 18px; color: #111111;">
-      Smokey Mo's Leander
-    </span>
-    <span style="display: block; font-size: 15px; color: #555555; margin-top: 4px;">
-      August 25
-    </span>
-      
-<!-- Santa Catarina Leander Event Link -->
-<a href="https://www.facebook.com/share/1C8Dy6haZ2/" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-block; text-align: center; text-decoration: none; color: inherit; font-family: sans-serif;">
-  
-  <img src="assets/Santa Catarina Restaurant.webp" 
-       alt="Santa Catarina, Cedar Park" 
-       style="width: 250px; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
+                <!-- Santa Catarina Leander Event Link -->
+                <a href="https://www.facebook.com/share/1C8Dy6haZ2/" target="_blank" rel="noopener noreferrer" class="event-card">
+                    <img src="assets/Santa Catarina Restaurant.webp" alt="Santa Catarina, Cedar Park">
+                    <div style="margin-top: 10px;">
+                        <span style="display: block; font-weight: bold; font-size: 18px; color: #111111;">Santa Catarina, Cedar Park</span>
+                        <span style="display: block; font-size: 15px; color: #555555; margin-top: 4px;">October 20</span>
+                    </div>
+                </a>
 
-  <!-- Text Section -->
-  <div style="margin-top: 10px;">
-    <span style="display: block; font-weight: bold; font-size: 18px; color: #111111;">
-      Santa Catarina, Cedar Park
-    </span>
-    <span style="display: block; font-size: 15px; color: #555555; margin-top: 4px;">
-      October 20
-    </span>
-      
-<!-- Manodla'sLeander Event Link -->
-<a href="https://www.facebook.com/share/19HJoF4UYr/" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   style="display: inline-block; text-align: center; text-decoration: none; color: inherit; font-family: sans-serif;">
-  
-  <img src="assets/Mandola's Restaurant.jpg" 
-       alt="Mandola's Cedar Park" 
-       style="width: 250px; height: auto; display: block; margin: 0 auto; border-radius: 8px;">
-
-  <!-- Text Section -->
-  <div style="margin-top: 10px;">
-    <span style="display: block; font-weight: bold; font-size: 18px; color: #111111;">
-      Mandola's, Cedar Park
-    </span>
-    <span style="display: block; font-size: 15px; color: #555555; margin-top: 4px;">
-      November 17
-    </span>
-                   </div>
-                </div>
+                <!-- Mandola's Leander Event Link -->
+                <a href="https://www.facebook.com/share/19HJoF4UYr/" target="_blank" rel="noopener noreferrer" class="event-card">
+                    <img src="assets/Mandola's Restaurant.jpg" alt="Mandola's Cedar Park">
+                    <div style="margin-top: 10px;">
+                        <span style="display: block; font-weight: bold; font-size: 18px; color: #111111;">Mandola's, Cedar Park</span>
+                        <span style="display: block; font-size: 15px; color: #555555; margin-top: 4px;">November 17</span>
+                    </div>
+                </a>
             </div>
 
         </section>
